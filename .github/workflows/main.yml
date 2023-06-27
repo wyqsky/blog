@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 拉取代码
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@master
 
       # 生成静态文件
       - name: Build
