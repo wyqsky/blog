@@ -13,7 +13,7 @@
 				<strong>年龄:&nbsp;&nbsp;</strong>xx
 			</li>
 			<li class="self-flex-tem">
-				<strong>婚姻:&nbsp;&nbsp;</strong>xx
+				<strong>婚姻:&nbsp;&nbsp;</strong>xxx
 			</li>
 			<li class="self-flex-tem">
 				<strong>邮箱:&nbsp;&nbsp;</strong>xxxxxxx
