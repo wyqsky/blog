@@ -22,6 +22,7 @@ module.exports = {
         //     { text: 'Web', link: '/web/' }
         //   ] 
         // },
+        { text: '常用网站', link: '/commonWebsites/' },
         { text: '项目分类', link: '/product/' },
         { text: '关于', link: '/guide/' },
         { text: '个人网站', link: 'https://www.wyqsky.top/dist/index.html#/home' },
