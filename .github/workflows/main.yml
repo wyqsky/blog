@@ -31,4 +31,4 @@ jobs:
         with:
           ACCESS_TOKEN: ${{ secrets.DEPLOY_ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
           BRANCH: release # 部署到指定分支
-          FOLDER: dist # vuepress 生成的静态文件存放的地方
+          FOLDER: dist/ # vuepress 生成的静态文件存放的地方
