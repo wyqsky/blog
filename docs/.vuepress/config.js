@@ -46,7 +46,7 @@ module.exports = {
     sidebar: {
     	'/product/': [
         ['', '介绍'],
-        ['table', '表格'],
+        // ['table', '表格'],
       ],
     },
     sidebarDepth: 2,
