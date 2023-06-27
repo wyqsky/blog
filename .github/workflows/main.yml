@@ -14,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 拉取代码
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           persist-credentials: false
+      - uses: actions/setup-node@v1
+        with:
           node-version: 12
 
       # 生成静态文件
