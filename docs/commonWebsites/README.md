@@ -5,6 +5,9 @@
 <div><a href="https://555dy.com/">555电影: https://555dy.com/</a></div>
 <div><a href="https://xiaoheimi.net/">小宝影院: https://xiaoheimi.net/</a></div>
 
+- [泥巴影院: https://www.nivod.tv/](https://www.nivod.tv/)
+- [茶杯狐: https://cupfox.app/](https://cupfox.app/)
+
 ### 工具库
 <div><a href="https://easypdf.com/">EasyPDF: https://easypdf.com/</a></div>
 
