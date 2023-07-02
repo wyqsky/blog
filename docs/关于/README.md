@@ -22,19 +22,16 @@ tags:
 				<strong>年龄:&nbsp;&nbsp;</strong>xx
 			</li>
 			<li class="self-flex-tem">
-				<strong>婚姻:&nbsp;&nbsp;</strong>xxx
+				<strong>邮箱:&nbsp;&nbsp;</strong>xxxxxx.@qq.com
 			</li>
 			<li class="self-flex-tem">
-				<strong>邮箱:&nbsp;&nbsp;</strong>xxxxxxx
+				<strong>手机:&nbsp;&nbsp;</strong>xxx xxxx xxxx
 			</li>
 			<li class="self-flex-tem">
-				<strong>手机:&nbsp;&nbsp;</strong>xxxxxxx
-			</li>
-			<li class="self-flex-tem">
-				<strong>经验:&nbsp;&nbsp;</strong>2.5年
+				<strong>经验:&nbsp;&nbsp;</strong>6年
 			</li>
 		</ul>
-		<h3 class="self-h3">自我评价</h3>
+		<!-- <h3 class="self-h3">自我评价</h3>
 		<p class="pl2">1.熟悉前端工作，熟悉敏捷开发模式；</p>
 		<p class="pl2">2.熟悉Htm5 和css3，使用SASS 进行预编译以及flex 布局；</p>
 		<p class="pl2">3.熟悉jQuery，Bootstrap、vue 等流行框架；</p>
@@ -52,7 +49,7 @@ tags:
 		<p class="pl2"><strong>专业名称：</strong>机械设计制造及自动化专业</p>
 		<p class="pl2"><strong>学历：</strong>本科</p>
 		<p class="pl2"><strong>英语：</strong>CET4</p>
-		<h3 class="self-h3">项目经历</h3>
+		<h3 class="self-h3">项目经历</h3> -->
 	</div>
 </template>
 

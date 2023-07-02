@@ -35,7 +35,7 @@ module.exports = {
     },
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://upload.jianshu.io/users/upload_avatars/5323321/23b5d2a1-d96b-4030-a7ce-9a49947c734b?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120',
+      avatar: 'https://www.wallpaperup.com/uploads/wallpapers/2012/09/16/15066/0af378c4296955f85a2e1c3831d049a9.jpg',
       name: '冬凌居',
       slogan: '来自文字的一些诉说',
     },
@@ -44,6 +44,7 @@ module.exports = {
       createYear: 2019, // 博客创建年份
       copyrightInfo: 'Dong Lingju'
     },
+    // bodyBgImg: 'https://www.wallpaperup.com/uploads/wallpapers/2012/11/10/21808/d829bb16c018f3c53c15dc0d81ffb7c5.jpg', 
     // sidebar: {
     //   '/nav/': [
     //     ['', '网站导航'],
