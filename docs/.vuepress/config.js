@@ -6,9 +6,6 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  plugins: [
-    ['fulltext-search'],
-  ],
   themeConfig: {
     lastUpdated: '上次更新',
     searchMaxSuggestions: 10,
@@ -22,14 +19,19 @@ module.exports = {
         { text: '主页', link: '/' },
         { text: '网站导航', link: '/pages/bfb1bf/' },
         { text: '关于', link: '/pages/5f65ab/' },
-        // { text: 'xxxx',
-        //   items: [
-        //     { text: 'xxxx', link: '/xxxx/' },
-        //   ] 
-        // },
+        {
+          text: '索引',
+          link: '/archives/',
+          items: [
+            { text: '分类', link: '/categories/' },
+            { text: '标签', link: '/tags/' },
+            { text: '归档', link: '/archives/' },
+          ],
+        },
     ],
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
+    pageStyle: 'card', // line
     author: {
       name: '冬凌居', // 必需
     },
@@ -61,4 +63,7 @@ module.exports = {
     // ]
     sidebarDepth: 2,
   },
+  plugins: [
+    'fulltext-search',
+  ],
 }
