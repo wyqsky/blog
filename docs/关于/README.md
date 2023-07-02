@@ -1,3 +1,12 @@
+---
+title: 关于
+date: 2023-07-02 09:35:54
+permalink: /pages/5f65ab/
+categories:
+  - 关于
+tags:
+  - 
+---
 <template>
 	<div class="self-content">
 		<h1 class="self-h1">简历</h1>

@@ -1,15 +1,15 @@
 ---
 home: true
-heroText: 文档管理
-tagline: 使用手册
-actionText: 快速上手 →
-actionLink: /guide/
+heroText: 生活记录
+tagline: 来自文字的一些诉说
+# actionText: 开始旅程 →
+actionLink: /pages/bfb1bf/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2018-present Dong Lingju
+- title: 关于
+  details: 爱你不是一天两天而是永远。
+- title: 技术
+  details: 空闲之余记录一些小文档。
+- title: 生活
+  details: 记录一些生活上的小事情。
+footer: MIT Licensed | Copyright © 2019-present Dong Lingju
 ---
