@@ -7,6 +7,7 @@
 
 #### 工具库
 - [EasyPDF: https://easypdf.com/](https://easypdf.com/)
+- [音乐试听下载: https://tool.liumingye.cn/music/](https://tool.liumingye.cn/music/)
 
 #### 其他导航
 - [影视森林: https://549.tv/](https://549.tv/)
