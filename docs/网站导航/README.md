@@ -37,7 +37,7 @@ tags:
 - [iTab新标签页: https://go.itab.link/](https://go.itab.link/)
 - [阿虚同学: http://axutongxue.com/](http://axutongxue.com/)
 - [好网站不私藏: https://www.207788.xyz/](https://www.207788.xyz/)
-- [爱达杂货铺: https://adzhp.cn/](https://adzhp.cn/)
+- [爱达杂货铺: https://adzhp.xyz/](https://adzhp.xyz/)
 - [书签地球: https://www.bookmarkearth.com/](https://www.bookmarkearth.com/)
 - [不死鸟: https://iao.su/](https://iao.su/)
 - [iMyShare: https://imyshare.com/](https://imyshare.com/)
