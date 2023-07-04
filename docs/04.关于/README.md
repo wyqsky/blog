@@ -10,6 +10,8 @@ tags:
 
 ![图片](/images/bg.jpg)
 
+<!-- more -->
+
 <template>
 	<div class="self-content">
 		<h1 class="self-h1">简历</h1>

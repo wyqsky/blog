@@ -17,7 +17,14 @@ module.exports = {
     ],
     nav: [
         { text: '主页', link: '/' },
-        { text: '网站导航', link: '/pages/bfb1bf/' },
+        { text: '收藏', link: '/pages/bfb1bf/' },
+        { 
+          text: '生活', link: '/life/',
+          items: [
+            { text: '游历山川', link: '/pages/451e1d/' },
+            { text: '随写笔录', link: '/pages/022326/' },
+          ],
+        },
         { text: '关于', link: '/pages/5f65ab/' },
         {
           text: '索引',
