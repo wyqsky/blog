@@ -7,6 +7,9 @@ categories:
 tags:
   - 
 ---
+
+![图片](/images/bg.jpg)
+
 <template>
 	<div class="self-content">
 		<h1 class="self-h1">简历</h1>
@@ -31,7 +34,6 @@ tags:
 				<strong>经验:&nbsp;&nbsp;</strong>6年
 			</li>
 		</ul>
-		![图片](/images/bg.jpg)
 		<!-- <h3 class="self-h3">自我评价</h3>
 		<p class="pl2">1.熟悉前端工作，熟悉敏捷开发模式；</p>
 		<p class="pl2">2.熟悉Htm5 和css3，使用SASS 进行预编译以及flex 布局；</p>
