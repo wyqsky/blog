@@ -25,7 +25,12 @@ module.exports = {
             { text: '随写笔录', link: '/pages/022326/' },
           ],
         },
-        { text: '关于', link: '/pages/5f65ab/' },
+        { 
+          text: '技术', link: '/technology/',
+          items: [
+            { text: 'NAS相关', link: '/pages/53da06/' },
+          ], 
+        },
         {
           text: '索引',
           link: '/archives/',
@@ -35,6 +40,7 @@ module.exports = {
             { text: '归档', link: '/archives/' },
           ],
         },
+        { text: '关于', link: '/pages/5f65ab/' },
     ],
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
