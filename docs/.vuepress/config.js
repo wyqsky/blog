@@ -1,3 +1,5 @@
+// vdoing文档地址: https://doc.xugaoyi.com/
+
 module.exports = {
   title: '冬凌居',
   description: '来自文字的一些诉说',
@@ -16,31 +18,31 @@ module.exports = {
       }]
     ],
     nav: [
-        { text: '主页', link: '/' },
-        { text: '收藏', link: '/pages/bfb1bf/' },
-        { 
-          text: '生活', link: '/life/',
-          items: [
-            { text: '游历山川', link: '/pages/451e1d/' },
-            { text: '随写笔录', link: '/pages/022326/' },
-          ],
-        },
-        { 
-          text: '技术', link: '/technology/',
-          items: [
-            { text: 'NAS相关', link: '/pages/53da06/' },
-          ], 
-        },
-        {
-          text: '索引',
-          link: '/archives/',
-          items: [
-            { text: '分类', link: '/categories/' },
-            { text: '标签', link: '/tags/' },
-            { text: '归档', link: '/archives/' },
-          ],
-        },
-        { text: '关于', link: '/pages/5f65ab/' },
+      { text: '主页', link: '/' },
+      { text: '收藏', link: '/pages/bfb1bf/' },
+      { 
+        text: '生活', link: '/life/',
+        items: [
+          { text: '游历山川', link: '/pages/451e1d/' },
+          { text: '随写笔录', link: '/pages/022326/' },
+        ],
+      },
+      { 
+        text: '技术', link: '/technology/',
+        items: [
+          { text: 'NAS相关', link: '/pages/53da06/' },
+        ], 
+      },
+      {
+        text: '索引',
+        link: '/archives/',
+        items: [
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '归档', link: '/archives/' },
+        ],
+      },
+      { text: '关于', link: '/pages/5f65ab/' },
     ],
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
@@ -78,5 +80,16 @@ module.exports = {
   },
   plugins: [
     'fulltext-search',
+    [
+      'vuepress-plugin-zooming',
+      {
+        selector: '.theme-vdoing-content img',
+        delay: 300,
+        options: {
+          bgColor: 'rgba(0,0,0,.8)',
+          zIndex: 9999,
+        },
+      },
+    ],
   ],
 }

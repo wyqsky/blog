@@ -19,6 +19,7 @@
     "json-server": "^0.12.1",
     "vuepress": "^1.9.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
+    "vuepress-plugin-zooming": "^1.1.8",
     "vuepress-theme-vdoing": "^1.12.8"
   }
 }
