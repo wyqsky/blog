@@ -1,3 +1,4 @@
+const moment = require('moment');
 // vdoing文档地址: https://doc.xugaoyi.com/
 
 module.exports = {
@@ -80,6 +81,15 @@ module.exports = {
   },
   plugins: [
     'fulltext-search',
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: timestamp => {
+          moment.locale('zh-cn');
+          return moment(timestamp).fromNow();
+        }
+      }
+    ],
     [
       'vuepress-plugin-zooming',
       {
