@@ -2,10 +2,11 @@
 title: 关于
 date: 2023-07-02 09:35:54
 permalink: /pages/5f65ab/
-categories:
+categories: 
   - 关于
-tags:
-  - 
+tags: 
+  - null
+lang: zh-CN
 ---
 
 ![图片](/images/bg.jpg)

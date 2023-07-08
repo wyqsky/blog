@@ -62,6 +62,9 @@ module.exports = {
       createYear: 2019, // 博客创建年份
       copyrightInfo: 'Dong Lingju'
     },
+    extendFrontmatter: {
+      lang: 'zh-CN'
+    },
     // bodyBgImg: 'https://www.wallpaperup.com/uploads/wallpapers/2012/11/10/21808/d829bb16c018f3c53c15dc0d81ffb7c5.jpg', 
     // sidebar: {
     //   '/nav/': [
@@ -81,15 +84,15 @@ module.exports = {
   },
   plugins: [
     'fulltext-search',
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: timestamp => {
-          moment.locale('zh-cn');
-          return moment(timestamp).fromNow();
-        }
-      }
-    ],
+    // [
+    //   '@vuepress/last-updated',
+    //   {
+    //     transformer: timestamp => {
+    //       moment.locale('zh-cn');
+    //       return moment(timestamp).fromNow();
+    //     }
+    //   }
+    // ],
     [
       'vuepress-plugin-zooming',
       {
