@@ -1,4 +1,3 @@
-const moment = require('moment');
 // vdoing文档地址: https://doc.xugaoyi.com/
 
 module.exports = {
@@ -19,23 +18,29 @@ module.exports = {
       }]
     ],
     nav: [
-      { text: '主页', link: '/' },
-      { text: '收藏', link: '/pages/bfb1bf/' },
+      { text: '🏠\n主页', link: '/' },
+      { text: '⭐\n收藏', link: '/pages/bfb1bf/' },
       { 
-        text: '生活', link: '/life/',
+        text: '🧡\n生活', link: '/life/',
         items: [
           { text: '游历山川', link: '/pages/451e1d/' },
           { text: '随写笔录', link: '/pages/022326/' },
         ],
       },
       { 
-        text: '技术', link: '/technology/',
+        text: '📺\n技术', link: '/technology/',
         items: [
           { text: 'NAS相关', link: '/pages/53da06/' },
         ], 
       },
+      { 
+        text: '💻\n前端', link: '/pages/6722ca/',
+        items: [
+          { text: '前端面试100问', link: 'https://wyqsky.gitee.io/vuepress-blog-master/', target: '_blank' },
+        ],
+      },
       {
-        text: '索引',
+        text: '👉\n索引',
         link: '/archives/',
         items: [
           { text: '分类', link: '/categories/' },
@@ -43,7 +48,7 @@ module.exports = {
           { text: '归档', link: '/archives/' },
         ],
       },
-      { text: '关于', link: '/pages/5f65ab/' },
+      { text: '🐰关于', link: '/pages/5f65ab/' },
     ],
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
@@ -84,15 +89,6 @@ module.exports = {
   },
   plugins: [
     'fulltext-search',
-    // [
-    //   '@vuepress/last-updated',
-    //   {
-    //     transformer: timestamp => {
-    //       moment.locale('zh-cn');
-    //       return moment(timestamp).fromNow();
-    //     }
-    //   }
-    // ],
     [
       'vuepress-plugin-zooming',
       {
