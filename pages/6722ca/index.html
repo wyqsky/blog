@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端面试指南 | 冬凌居</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    
+    <meta name="description" content="来自文字的一些诉说">
+    
+    <link rel="preload" href="/assets/css/0.styles.35288334.css" as="style"><link rel="preload" href="/assets/js/app.f3fe2e17.js" as="script"><link rel="preload" href="/assets/js/2.ca715f40.js" as="script"><link rel="preload" href="/assets/js/12.ab465c55.js" as="script"><link rel="prefetch" href="/assets/js/10.da353e7a.js"><link rel="prefetch" href="/assets/js/11.018f03bd.js"><link rel="prefetch" href="/assets/js/13.c1dc0ca9.js"><link rel="prefetch" href="/assets/js/14.17c72861.js"><link rel="prefetch" href="/assets/js/15.ecc70d6d.js"><link rel="prefetch" href="/assets/js/16.2d3e6046.js"><link rel="prefetch" href="/assets/js/17.2bbeaf80.js"><link rel="prefetch" href="/assets/js/3.c91b0f05.js"><link rel="prefetch" href="/assets/js/4.5432e0a8.js"><link rel="prefetch" href="/assets/js/5.0fa054f8.js"><link rel="prefetch" href="/assets/js/6.bd3747fb.js"><link rel="prefetch" href="/assets/js/7.ef6b3d70.js"><link rel="prefetch" href="/assets/js/8.86d6e673.js"><link rel="prefetch" href="/assets/js/9.0e78bffc.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.35288334.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">冬凌居</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">🏠
+主页</a></div><div class="nav-item"><a href="/pages/bfb1bf/" class="nav-link">⭐
+收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧡
+生活" class="dropdown-title"><a href="/life/" class="link-title">🧡
+生活</a> <span class="title" style="display:none;">🧡
+生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/451e1d/" class="nav-link">游历山川</a></li><li class="dropdown-item"><!----> <a href="/pages/022326/" class="nav-link">随写笔录</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📺
+技术" class="dropdown-title"><a href="/technology/" class="link-title">📺
+技术</a> <span class="title" style="display:none;">📺
+技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/53da06/" class="nav-link">NAS相关</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="💻
+前端" class="dropdown-title"><a href="/pages/6722ca/" aria-current="page" class="link-title router-link-exact-active router-link-active">💻
+前端</a> <span class="title" style="display:none;">💻
+前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://wyqsky.gitee.io/vuepress-blog-master/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  前端面试100问
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="👉
+索引" class="dropdown-title"><a href="/archives/" class="link-title">👉
+索引</a> <span class="title" style="display:none;">👉
+索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="/pages/5f65ab/" class="nav-link">🐰关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="https://www.wallpaperup.com/uploads/wallpapers/2012/09/16/15066/0af378c4296955f85a2e1c3831d049a9.jpg"> <div class="blogger-info"><h3>冬凌居</h3> <span>来自文字的一些诉说</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">🏠
+主页</a></div><div class="nav-item"><a href="/pages/bfb1bf/" class="nav-link">⭐
+收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🧡
+生活" class="dropdown-title"><a href="/life/" class="link-title">🧡
+生活</a> <span class="title" style="display:none;">🧡
+生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/451e1d/" class="nav-link">游历山川</a></li><li class="dropdown-item"><!----> <a href="/pages/022326/" class="nav-link">随写笔录</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📺
+技术" class="dropdown-title"><a href="/technology/" class="link-title">📺
+技术</a> <span class="title" style="display:none;">📺
+技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/53da06/" class="nav-link">NAS相关</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="💻
+前端" class="dropdown-title"><a href="/pages/6722ca/" aria-current="page" class="link-title router-link-exact-active router-link-active">💻
+前端</a> <span class="title" style="display:none;">💻
+前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://wyqsky.gitee.io/vuepress-blog-master/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  前端面试100问
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="👉
+索引" class="dropdown-title"><a href="/archives/" class="link-title">👉
+索引</a> <span class="title" style="display:none;">👉
+索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/archives/" class="nav-link">归档</a></li></ul></div></div><div class="nav-item"><a href="/pages/5f65ab/" class="nav-link">🐰关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/pages/6722ca/" aria-current="page" class="active sidebar-link">前端面试指南</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_1-1-外在" class="sidebar-link">1.1. 外在</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_1-2-自我介绍" class="sidebar-link">1.2. 自我介绍</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_1-3-常见问题回答技巧" class="sidebar-link">1.3. 常见问题回答技巧</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-1-你的优点是什么" class="sidebar-link">1.3.1. 你的优点是什么</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-2-你的缺点是什么" class="sidebar-link">1.3.2. 你的缺点是什么</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-3-离职的原因是什么" class="sidebar-link">1.3.3. 离职的原因是什么</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-4-你的期望薪资是多少" class="sidebar-link">1.3.4. 你的期望薪资是多少</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-5-你有什么想问我的吗" class="sidebar-link">1.3.5. 你有什么想问我的吗</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-6-最快什么时候能入职" class="sidebar-link">1.3.6. 最快什么时候能入职</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-7-三年或者五年的规划是什么" class="sidebar-link">1.3.7. 三年或者五年的规划是什么</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_1-3-8-项目中遇到的最难的是啥-如何解决的" class="sidebar-link">1.3.8 项目中遇到的最难的是啥，如何解决的？</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_2-1-成员角色说明" class="sidebar-link">2.1. 成员角色说明</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_2-2-开发人员配置比例" class="sidebar-link">2.2. 开发人员配置比例</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_2-2-1-纯甲方公司" class="sidebar-link">2.2.1. 纯甲方公司</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_2-2-2-外包公司" class="sidebar-link">2.2.2. 外包公司</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_3-1-图解说明" class="sidebar-link">3.1. 图解说明</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_3-2-具体流程说明" class="sidebar-link">3.2. 具体流程说明</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_4-1-前端开发所有技术选择" class="sidebar-link">4.1. 前端开发所有技术选择</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_4-2-后端服务器开发选择" class="sidebar-link">4.2. 后端服务器开发选择</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_4-3-数据库" class="sidebar-link">4.3. 数据库</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-1-原生javascript" class="sidebar-link">5.1. 原生JavaScript</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-2-h5-c3新特性" class="sidebar-link">5.2. H5，C3新特性</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-3-移动端" class="sidebar-link">5.3. 移动端</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-4-es6" class="sidebar-link">5.4. ES6+</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-5-模块化" class="sidebar-link">5.5. 模块化</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-6-构建工具" class="sidebar-link">5.6. 构建工具</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-7-前后台交互" class="sidebar-link">5.7. 前后台交互</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_5-8-框架" class="sidebar-link">5.8. 框架</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-1-前置知识" class="sidebar-link">6.1. 前置知识</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-2-回调函数" class="sidebar-link">6.2. 回调函数</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-3-事件监听" class="sidebar-link">6.3. 事件监听</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-4-消息订阅-发布与全局事件总线" class="sidebar-link">6.4. 消息订阅/发布与全局事件总线</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-5-promise" class="sidebar-link">6.5. Promise</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-6-async-await" class="sidebar-link">6.6. async/await</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-7-js事件循环机制" class="sidebar-link">6.7. JS事件循环机制</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-8-promise深入理解" class="sidebar-link">6.8. Promise深入理解</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_6-9-自定义promise" class="sidebar-link">6.9. 自定义Promise</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-1-接口的理解-测试-模拟" class="sidebar-link">7.1. 接口的理解/测试/模拟</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-2-ajax请求" class="sidebar-link">7.2. ajax请求</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-3-解决ajax跨域问题的常见技巧" class="sidebar-link">7.3. 解决ajax跨域问题的常见技巧</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-4-axios的理解和使用" class="sidebar-link">7.4. axios的理解和使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-4-1-axios的特点" class="sidebar-link">7.4.1. axios的特点</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-4-2-axios的常用语法" class="sidebar-link">7.4.2. axios的常用语法</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-5-axios的二次封装" class="sidebar-link">7.5. axios的二次封装</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_7-6-axios的核心实现分析" class="sidebar-link">7.6. axios的核心实现分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-6-1-instance与axios的区别" class="sidebar-link">7.6.1. instance与axios的区别?</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-6-2-axios运行的整体流程" class="sidebar-link">7.6.2. axios运行的整体流程?</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-6-3-axios的请求-响应拦截器是什么" class="sidebar-link">7.6.3. axios的请求/响应拦截器是什么?</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_7-6-4-axios的请求-响应数据转换器是什么" class="sidebar-link">7.6.4. axios的请求/响应数据转换器是什么?</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-1-webpack的理解" class="sidebar-link">8.1. webpack的理解</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-2-webpack的几个核心概念" class="sidebar-link">8.2. webpack的几个核心概念</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-3-webpack常用一级配置" class="sidebar-link">8.3. webpack常用一级配置</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-4-说说几个常见的loader" class="sidebar-link">8.4. 说说几个常见的loader</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-5-说说几个常见的plugin" class="sidebar-link">8.5. 说说几个常见的plugin</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-6-区别plugin与loader" class="sidebar-link">8.6. 区别plugin与loader</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-7-区别module-chunk-和-bundle" class="sidebar-link">8.7. 区别module，chunk 和 bundle ?</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-8-区别webpackprefetch与webpackpreload" class="sidebar-link">8.8. 区别webpackPrefetch与webpackPreload</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-9-区别hash、chunkhash、contenthash" class="sidebar-link">8.9. 区别hash、chunkhash、contenthash</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-10-区别source-map-中inline与eval-cheap与module" class="sidebar-link">8.10. 区别source-map 中inline与eval, cheap与module</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-11-说说webpack中babel的使用" class="sidebar-link">8.11. 说说webpack中babel的使用</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-12-webpack如何优化打包文件" class="sidebar-link">8.12. webpack如何优化打包文件</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_8-13-webpack如何优化打包" class="sidebar-link">8.13. webpack如何优化打包</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-1-函数相关" class="sidebar-link">9.1. 函数相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-1-1-函数对象的call-apply-bind" class="sidebar-link">9.1.1. 函数对象的call() / apply() / bind()</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-1-2-函数的节流-throttle-与防抖-debounce" class="sidebar-link">9.1.2. 函数的节流(throttle)与防抖(debounce)</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-2-数组相关" class="sidebar-link">9.2. 数组相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-1-数组声明式系列方法" class="sidebar-link">9.2.1. 数组声明式系列方法</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-2-数组去重-unique" class="sidebar-link">9.2.2. 数组去重(unique)</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-3-数组合并-concat-与切片-slice" class="sidebar-link">9.2.3. 数组合并(concat)与切片(slice)</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-4-数组扁平化-flatten" class="sidebar-link">9.2.4. 数组扁平化(flatten)</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-5-数组取真与分块" class="sidebar-link">9.2.5. 数组取真与分块</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-6-数组取差异与合并" class="sidebar-link">9.2.6. 数组取差异与合并</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-7-删除数组中部分元素" class="sidebar-link">9.2.7. 删除数组中部分元素</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-2-8-得到数组的部分元素" class="sidebar-link">9.2.8. 得到数组的部分元素</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-3-对象相关" class="sidebar-link">9.3. 对象相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-3-1-自定义new和instanceof工具函数" class="sidebar-link">9.3.1. 自定义new和instanceof工具函数</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-3-2-合并多个对象" class="sidebar-link">9.3.2. 合并多个对象</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-3-3-对象-数组浅拷贝与深拷贝" class="sidebar-link">9.3.3. 对象/数组浅拷贝与深拷贝</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-4-字符串相关" class="sidebar-link">9.4. 字符串相关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-4-1-字符串倒序" class="sidebar-link">9.4.1. 字符串倒序</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-4-2-字符串是否是回文" class="sidebar-link">9.4.2. 字符串是否是回文</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-4-3-截取字符串" class="sidebar-link">9.4.3. 截取字符串</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-5-事件总线" class="sidebar-link">9.5. 事件总线</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-5-1-eventbus-包含所有功能的全局事件总线对象" class="sidebar-link">9.5.1. EventBus: 包含所有功能的全局事件总线对象</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-5-2-eventbus-on-eventname-listener-绑定事件监听" class="sidebar-link">9.5.2. EventBus.on(eventName, listener): 绑定事件监听</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-5-3-eventbus-emit-eventname-data-分发事件" class="sidebar-link">9.5.3. EventBus.emit(eventName, data): 分发事件</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-5-4-eventbus-off-eventname-解绑事件监听" class="sidebar-link">9.5.4. EventBus.off(eventName): 解绑事件监听</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-6-消息订阅与发布" class="sidebar-link">9.6. 消息订阅与发布</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-6-1-pubsub-包含所有功能的订阅-发布消息的管理者" class="sidebar-link">9.6.1. PubSub: 包含所有功能的订阅/发布消息的管理者</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-6-2-pubsub-subscribe-msg-subscriber-订阅消息" class="sidebar-link">9.6.2. PubSub.subscribe(msg, subscriber): 订阅消息</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-6-3-pubsub-publish-msg-data-异步发布消息" class="sidebar-link">9.6.3. PubSub.publish(msg, data): 异步发布消息</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-6-4-pubsub-publishsync-msg-data-同步发布消息" class="sidebar-link">9.6.4. PubSub.publishSync(msg, data): 同步发布消息</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-6-5-pubsub-unsubscribe-flag-取消订阅" class="sidebar-link">9.6.5. PubSub.unsubscribe(flag): 取消订阅</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-7-promise" class="sidebar-link">9.7. Promise</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-1-定义整体结构" class="sidebar-link">9.7.1. 定义整体结构</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-2-promise构造函数的实现" class="sidebar-link">9.7.2. Promise构造函数的实现</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-3-promise-then-catch-的实现" class="sidebar-link">9.7.3. promise.then()/catch()的实现</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-4-promise-resolve-reject-的实现" class="sidebar-link">9.7.4. Promise.resolve()/reject()的实现</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-5-promise-all-race-的实现" class="sidebar-link">9.7.5. Promise.all/race()的实现</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-7-6-promise-resolvedelay-rejectdelay-的实现" class="sidebar-link">9.7.6. Promise.resolveDelay()/rejectDelay()的实现</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-8-ajax函数封装-axios" class="sidebar-link">9.8. ajax函数封装: axios</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_9-9-数据结构与排序算法" class="sidebar-link">9.9. 数据结构与排序算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-9-1-自定义栈-stack" class="sidebar-link">9.9.1. 自定义栈: Stack</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-9-2-自定义队列-queue" class="sidebar-link">9.9.2. 自定义队列: Queue</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-9-3-自定义优先级队列-priorityqueue" class="sidebar-link">9.9.3. 自定义优先级队列: PriorityQueue</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-9-4-简单排序-冒泡-选择-插入" class="sidebar-link">9.9.4. 简单排序: 冒泡 / 选择 / 插入</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_9-9-5-高级排序-希尔" class="sidebar-link">9.9.5. 高级排序: 希尔</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_10-1-原型与原型链" class="sidebar-link">10.1. 原型与原型链</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_10-2-js事件循环-event-loop-机制" class="sidebar-link">10.2. JS事件循环(Event Loop)机制</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_10-3-redux结构图" class="sidebar-link">10.3. redux结构图</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_10-4-vuex结构图" class="sidebar-link">10.4. vuex结构图</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_10-5-vue的数据绑定原理图" class="sidebar-link">10.5. Vue的数据绑定原理图</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#vue框架" class="sidebar-link">Vue框架</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-1-区别单向数据流与双向数据绑定" class="sidebar-link">11.1. 区别单向数据流与双向数据绑定</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-2-生命周期函数" class="sidebar-link">11.2. 生命周期函数</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-3-组件通信方式" class="sidebar-link">11.3. 组件通信方式</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-4-路由" class="sidebar-link">11.4. 路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-4-1-路由跳转" class="sidebar-link">11.4.1. 路由跳转</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-4-2-路由传参" class="sidebar-link">11.4.2. 路由传参</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#react框架" class="sidebar-link">React框架</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-5-react核心思想" class="sidebar-link">11.5. React核心思想</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-6-react生命周期函数" class="sidebar-link">11.6. React生命周期函数</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-7-组件通信" class="sidebar-link">11.7. 组件通信</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-7-1-props" class="sidebar-link">11.7.1. props</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-7-2-消息订阅与发布机制-pubsub" class="sidebar-link">11.7.2. 消息订阅与发布机制(pubsub)</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-7-3-redux" class="sidebar-link">11.7.3. Redux</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-8-react路由" class="sidebar-link">11.8. React路由</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-8-1-路由跳转" class="sidebar-link">11.8.1. 路由跳转</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_11-8-2-路由传参" class="sidebar-link">11.8.2. 路由传参</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#jquery" class="sidebar-link">jQuery</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-9-整体理解" class="sidebar-link">11.9. 整体理解</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-10-jquery核心函数" class="sidebar-link">11.10. jQuery核心函数</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-11-jquery核心对象" class="sidebar-link">11.11. jQuery核心对象</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-12-编码测试" class="sidebar-link">11.12. 编码测试</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#小程序" class="sidebar-link">小程序</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-13-程序语法" class="sidebar-link">11.13. 程序语法：</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-14-小程序发送请求" class="sidebar-link">11.14. 小程序发送请求</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-15-小程序本地数据存储" class="sidebar-link">11.15. 小程序本地数据存储</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-16-小程序获取openid流程" class="sidebar-link">11.16. 小程序获取openID流程</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_11-17-小程序支付流程" class="sidebar-link">11.17. 小程序支付流程:</a></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-1-fastclick的300ms延迟解决方案" class="sidebar-link">12.1. fastClick的300ms延迟解决方案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-1-1-问题剖析" class="sidebar-link">12.1.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-1-2-解决方案-fastclick库" class="sidebar-link">12.1.2. 解决方案: fastclick库</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-2-外链样式页面刷新页面样式丢失问题" class="sidebar-link">12.2. 外链样式页面刷新页面样式丢失问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-2-1-问题剖析" class="sidebar-link">12.2.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-2-2-解决方案" class="sidebar-link">12.2.2. 解决方案:</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-3-scoped下修改第三方样式数据-深度选择器" class="sidebar-link">12.3. scoped下修改第三方样式数据(深度选择器)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-3-1-问题剖析" class="sidebar-link">12.3.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-3-2-解决方案" class="sidebar-link">12.3.2. 解决方案:</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-4-params传参刷新参数丢失问题" class="sidebar-link">12.4. params传参刷新参数丢失问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-4-1-问题剖析" class="sidebar-link">12.4.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-4-2-解决方案" class="sidebar-link">12.4.2. 解决方案:</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-5-map文件过大问题" class="sidebar-link">12.5. map文件过大问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-5-1-问题剖析" class="sidebar-link">12.5.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-5-2-解决方案" class="sidebar-link">12.5.2. 解决方案</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-6-生产环境-开发环境解决跨域问题" class="sidebar-link">12.6. 生产环境 &amp; 开发环境解决跨域问题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-6-1-问题剖析" class="sidebar-link">12.6.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-6-2-解决方案之开发环境跨域" class="sidebar-link">12.6.2. 解决方案之开发环境跨域:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-6-3-解决方案之生产环境跨域" class="sidebar-link">12.6.3. 解决方案之生产环境跨域:</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-7-使用swiper-better-scroll生成多个实例只有一个生效" class="sidebar-link">12.7. 使用swiper &amp; better-scroll生成多个实例只有一个生效</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-7-1-问题剖析" class="sidebar-link">12.7.1. 问题剖析:</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-7-2-解决方案" class="sidebar-link">12.7.2. 解决方案:</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-8-swiper或者better-scroll在页面加载后不生效" class="sidebar-link">12.8. swiper或者better-scroll在页面加载后不生效</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-8-1-问题剖析" class="sidebar-link">12.8.1. 问题剖析</a></li><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-8-2-解决方案" class="sidebar-link">12.8.2. 解决方案</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/pages/6722ca/#_12-9-vue实例的响应式属性-vs-非响应式属性" class="sidebar-link">12.9. Vue实例的响应式属性 VS 非响应式属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/pages/6722ca/#_12-9-1-问题剖析" class="sidebar-link">12.9.1. 问题剖析</a></li></ul></li></ul></li><li><a href="/pages/c985cf/" class="sidebar-link">基础题目讲解</a></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E5%89%8D%E7%AB%AF" title="分类" data-v-06225672>前端</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="javascript:;" data-v-06225672>冬凌居</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2023-07-08</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">前端面试指南<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h1 id="面试必备技能"><a href="#面试必备技能" class="header-anchor">#</a> 面试必备技能</h1> <h1 id="_1-职场礼仪"><a href="#_1-职场礼仪" class="header-anchor">#</a> 1.  职场礼仪</h1> <h2 id="_1-1-外在"><a href="#_1-1-外在" class="header-anchor">#</a> 1.1. 外在</h2> <ol><li><div class="language- extra-class"><pre><code>  穿着不需要太正式(不要穿正装)，也不能太随意, 干净利落即可
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  言行举止得当，说话有礼貌，谦虚中带自信
+</code></pre></div></li></ol> <h2 id="_1-2-自我介绍"><a href="#_1-2-自我介绍" class="header-anchor">#</a> 1.2. 自我介绍</h2> <ol><li><div class="language- extra-class"><pre><code>  自我介绍要精简，不能太短，更不能太长，一般不要超过5分钟
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  快速的体现自己的优点，价值
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  个人基本信息 + 自己擅长的技术(原生，框架) + 项目
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  不要说太多技术不相关的内容，面试官也不想听
+</code></pre></div></li></ol> <h2 id="_1-3-常见问题回答技巧"><a href="#_1-3-常见问题回答技巧" class="header-anchor">#</a> 1.3. 常见问题回答技巧</h2> <h3 id="_1-3-1-你的优点是什么"><a href="#_1-3-1-你的优点是什么" class="header-anchor">#</a> 1.3.1. 你的优点是什么</h3> <ol><li><div class="language- extra-class"><pre><code>         生活和工作及技能的优点都可以说，且要说的很自信
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  比如: 喜欢研究技术, 技术的底子还是可以的
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  比如: 性格比较开朗/随和, 与同事之间的关系都还处得不错, 这样也有利于项目开发
+</code></pre></div></li></ol> <h3 id="_1-3-2-你的缺点是什么"><a href="#_1-3-2-你的缺点是什么" class="header-anchor">#</a> 1.3.2. 你的缺点是什么</h3> <ol><li><div class="language- extra-class"><pre><code>  每个人都有缺点，但不要把自己的缺点和盘托出，尽量用缺点去变向的突出你的优点，
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  比如: 我不太擅长主动跟陌生人唠嗑, 但聊技术/聊需求没任何问题
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  比如：我这个人很较真，尤其是在开发的时候，遇到bug不解决不下班
+</code></pre></div></li></ol> <h3 id="_1-3-3-离职的原因是什么"><a href="#_1-3-3-离职的原因是什么" class="header-anchor">#</a> 1.3.3. 离职的原因是什么</h3> <ol><li><div class="language- extra-class"><pre><code>  不能说上家公司坏话，最无奈的说法就是上家公司黄了，或者拖欠工资好几个月
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  合乎常理，没有太大漏洞
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  离职理由说一条就够了
+</code></pre></div></li></ol> <h3 id="_1-3-4-你的期望薪资是多少"><a href="#_1-3-4-你的期望薪资是多少" class="header-anchor">#</a> 1.3.4. 你的期望薪资是多少</h3> <ol><li><div class="language- extra-class"><pre><code>  非终面不要主动深谈薪资
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  只说区间，不说具体数字
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  底线是不低于当前薪资
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  非要具体数字，区间取中间值，或者当前薪资的+20%
+</code></pre></div></li></ol> <h3 id="_1-3-5-你有什么想问我的吗"><a href="#_1-3-5-你有什么想问我的吗" class="header-anchor">#</a> 1.3.5. 你有什么想问我的吗</h3> <ol><li><div class="language- extra-class"><pre><code>  没有固定答案，面试官只是想看你和其他面试者有什么不一样的地方
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  可以关心公司的技术栈及发展的方向
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  你入职后的半年时间内可以给公司做哪些贡献
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  公司是否给新员工提供快速融入公司的平台，比如: 帮带计划
+</code></pre></div></li></ol> <h3 id="_1-3-6-最快什么时候能入职"><a href="#_1-3-6-最快什么时候能入职" class="header-anchor">#</a> 1.3.6. 最快什么时候能入职</h3> <ol><li><div class="language- extra-class"><pre><code>  一周之内
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  如果公司需求紧急可适当排除困难提前入职
+</code></pre></div></li></ol> <h3 id="_1-3-7-三年或者五年的规划是什么"><a href="#_1-3-7-三年或者五年的规划是什么" class="header-anchor">#</a> 1.3.7. 三年或者五年的规划是什么</h3> <ol><li><div class="language- extra-class"><pre><code>  做任何事情提前做规划的人的成功几率远远高于随波逐流的人群
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  比如: 三年之内让自己的技术栈沉淀的更深，会的更多，争取做一个全栈工程师
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  五年之内争取能够发挥自己所有的热度给公司贡献自己最大的力量，有机会的话争取做技术管理岗
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  记住：不想当将军的士兵不是好士兵
+</code></pre></div></li></ol> <h3 id="_1-3-8-项目中遇到的最难的是啥-如何解决的"><a href="#_1-3-8-项目中遇到的最难的是啥-如何解决的" class="header-anchor">#</a> 1.3.8 项目中遇到的最难的是啥，如何解决的？</h3> <h1 id="_2-项目组人员架构"><a href="#_2-项目组人员架构" class="header-anchor">#</a> 2.  项目组人员架构</h1> <h2 id="_2-1-成员角色说明"><a href="#_2-1-成员角色说明" class="header-anchor">#</a> 2.1. 成员角色说明</h2> <ol><li><div class="language- extra-class"><pre><code>技术总监(CTO)
+</code></pre></div></li></ol> <p>a)       负责把控整个项目的开发运行，前后端全通的全能型人才
+2.     产品经理(PM)
+a)       负责产品设计
+b)      明确项目需求并传达给对应的前后端开发人员
+3.     UI设计师
+a)       负责设计页面并出页面效果图供前端人员开发使用
+4.     前端开发人员
+a)       负责前端页面开发
+b)      同后端对接
+5.     后端开发人员
+a)       负责服务器搭建
+b)      处理应用逻辑
+c)       为前端提供接口数据
+d)      操作数据库
+6.     测试工程师
+a)       负责检测前后端项目是否有bug，保证项目尽量完美
+b)      及时提出bug由前后端人员解决
+7.     运维工程师
+a)       负责线上环境的安全，部署项目上线
+b)      操作数据库
+8.     SEO工程师
+a)       负责做网站的整体SEO优化
+b)      百度词条，关键字，外链</p> <h2 id="_2-2-开发人员配置比例"><a href="#_2-2-开发人员配置比例" class="header-anchor">#</a> 2.2. 开发人员配置比例</h2> <h3 id="_2-2-1-纯甲方公司"><a href="#_2-2-1-纯甲方公司" class="header-anchor">#</a> 2.2.1. 纯甲方公司</h3> <ol><li><div class="language- extra-class"><pre><code>10-30人公司
+</code></pre></div></li></ol> <p>a)       前端人员1人
+b)      后端人员3人
+c)       测试1人
+d)      运维1人
+2.     30 – 60人公司
+a)       前端人员1-2人
+b)      后端人员3-5人
+c)       测试1人
+d)      运维1人
+3.     60-100人公司
+a)       前端人员1-3人
+b)      后端人员5-8人
+c)       测试1人
+d)      运维1人
+4.     100-300人公司
+a)       前端人员3-5人
+b)      后端人员10-20人
+c)       测试1-2人
+d)      运维2-3人
+5.     300人以上公司
+a)       前端人员5 -8人
+b)      后端人员10-20人
+c)       测试1-2人
+d)      运维2-3人
+<strong>以上数据仅供参考，不同的公司业务重点不一样，人员配置不一样，但再被问到前后端人员配置的时候应肯定的说出提前准备的答案，前后端人员比例: 1 : 3即可</strong></p> <h3 id="_2-2-2-外包公司"><a href="#_2-2-2-外包公司" class="header-anchor">#</a> 2.2.2. 外包公司</h3> <ol><li><div class="language- extra-class"><pre><code>外包公司人员配置不是特别固定，一般根据业务需求按需招人
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>业务重点决定人员配置，前后端人员配置1 : 3左右即可，说的时候要肯定
+</code></pre></div></li></ol> <h1 id="_3-项目从0到1开发流程"><a href="#_3-项目从0到1开发流程" class="header-anchor">#</a> 3.  项目从0到1开发流程</h1> <h2 id="_3-1-图解说明"><a href="#_3-1-图解说明" class="header-anchor">#</a> 3.1. 图解说明</h2> <h2 id="_3-2-具体流程说明"><a href="#_3-2-具体流程说明" class="header-anchor">#</a> 3.2. 具体流程说明</h2> <ol><li><div class="language- extra-class"><pre><code>  客户，甲方公司提出需求
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  产品经理，项目经理明确需求
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  产品经理出概念图同客户(甲方公司)确认需求
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  产品经理出prd图/原型图(通常会拉上相关人员开会讨论确定需求)
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  UI设计师出设计(标注)图
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  开发人员进行开发（前端人员，后端开发人员）
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  期间测试人员会对已经开发的部分进行测试，测出BUG后提交到‘bug日志’系统，开发人员每天去的首要任务是查看‘bug日志’有无自己开发的bug，并解决bug
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  在前后端开发完之后会进行‘前后端联调’，联调指的是将前端的项目部署到后台服务器上，后端项目部署到‘测试环境’上运行项目，查看项目是否有bug并检查项目能够承受的‘高并发’能力
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  项目联调没有问题会邀请部分用户进行测试体验，如果有问题及时处理，如果没有问题就会部署到‘线上环境’，项目可以被互联网用户访问
+</code></pre></div></li></ol> <h1 id="_4-项目技术架构"><a href="#_4-项目技术架构" class="header-anchor">#</a> 4.  项目技术架构</h1> <h2 id="_4-1-前端开发所有技术选择"><a href="#_4-1-前端开发所有技术选择" class="header-anchor">#</a> 4.1. 前端开发所有技术选择</h2> <ol><li><div class="language- extra-class"><pre><code>原生JavaScript
+</code></pre></div></li></ol> <p>目前很少有项目这样选择
+2.     jQuery框架 + jQueryUI || BootStrap + jQuery插件
+较老的项目，或者之前成型的大型项目
+3.     Angular框架 + AngularUI库 + Angular扩展库
+a)       时间不会太久的中小型项目
+b)      国内相对较少
+4.     React + Antd + React-router + Redux + axios + React Native
+流行的中大型项目
+5.     Vue + Vue-router + Vuex + MintUI || ElementUI + axios + 插件库(swiper, better-scroll/lodash/date-fns/等)
+流行的小，中大型项目
+6.     Vue(操作数据) + jQuery(操作DOM) + Vue常用扩展库
+这种用法不是太多</p> <h2 id="_4-2-后端服务器开发选择"><a href="#_4-2-后端服务器开发选择" class="header-anchor">#</a> 4.2. 后端服务器开发选择</h2> <ol><li><div class="language- extra-class"><pre><code>Java
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>Python
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>PHP
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>.net
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>原生应用
+</code></pre></div></li></ol> <p>a)       Android
+b)      IOS
+c)       React Native / Weex / Flutter</p> <h2 id="_4-3-数据库"><a href="#_4-3-数据库" class="header-anchor">#</a> 4.3. 数据库</h2> <ol><li><div class="language- extra-class"><pre><code>  MongoDB
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Mysql
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Oracle
+</code></pre></div></li></ol> <h1 id="_5-必备技术栈概要"><a href="#_5-必备技术栈概要" class="header-anchor">#</a> 5.  必备技术栈概要</h1> <h2 id="_5-1-原生javascript"><a href="#_5-1-原生javascript" class="header-anchor">#</a> 5.1. 原生JavaScript</h2> <ol><li><div class="language- extra-class"><pre><code>  面向对象：作用域(链)，原型(链)，闭包，执行上下文(栈)，继承，
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  操作DOM
+</code></pre></div></li></ol> <h2 id="_5-2-h5-c3新特性"><a href="#_5-2-h5-c3新特性" class="header-anchor">#</a> 5.2. H5，C3新特性</h2> <ol><li><div class="language- extra-class"><pre><code>  语义化标签
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  本地存储
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Canvas，audio，video
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  C3新增选择器
+</code></pre></div></li></ol> <h2 id="_5-3-移动端"><a href="#_5-3-移动端" class="header-anchor">#</a> 5.3. 移动端</h2> <ol><li><div class="language- extra-class"><pre><code>  移动端适配
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  移动端常见问题：1物理像素边框，事件点透，多指操作
+</code></pre></div></li></ol> <h2 id="_5-4-es6"><a href="#_5-4-es6" class="header-anchor">#</a> 5.4. ES6+</h2> <ol><li><div class="language- extra-class"><pre><code>  箭头函数，promise，async/await，class
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  加分项: promise深入使用与自定义实现
+</code></pre></div></li></ol> <h2 id="_5-5-模块化"><a href="#_5-5-模块化" class="header-anchor">#</a> 5.5. 模块化</h2> <ol><li><div class="language- extra-class"><pre><code>  ES6
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Commonjs
+</code></pre></div></li></ol> <h2 id="_5-6-构建工具"><a href="#_5-6-构建工具" class="header-anchor">#</a> 5.6. 构建工具</h2> <ol><li><div class="language- extra-class"><pre><code>  Webpack核心思想：模块化打包
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Webpack基本配置: entry, output, module&amp;rules, plugins, devServer, devtool, resolve
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  打包各种资源: JS / CSS/img/html/...
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  加分项: 自定义webpack打包环境,  Webpack性能优化
+</code></pre></div></li></ol> <h2 id="_5-7-前后台交互"><a href="#_5-7-前后台交互" class="header-anchor">#</a> 5.7. 前后台交互</h2> <ol><li><div class="language- extra-class"><pre><code>  原生ajax请求 xhr/fetch
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  ajax请求跨域问题
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  ajax请求库axios的理解和使用
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  axios的二次封装
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  加分项: axios的核心实现源码分析
+</code></pre></div></li></ol> <h2 id="_5-8-框架"><a href="#_5-8-框架" class="header-anchor">#</a> 5.8. 框架</h2> <ol><li><div class="language- extra-class"><pre><code>  jQuery
+</code></pre></div></li></ol> <p>(1)     整体理解
+(2)     jQuery核心函数
+(3)     jQuery核心对象
+2.       Vue
+(1)     Vue基本核心语法
+(2)     Vue-router
+(3)     Vuex
+(4)     MVVM实现原理
+3.       React
+(1)     React基本核心语法
+(2)     React-router
+(3)     Redux</p> <h1 id="_6-js异步编程"><a href="#_6-js异步编程" class="header-anchor">#</a> 6.  JS异步编程</h1> <h2 id="_6-1-前置知识"><a href="#_6-1-前置知识" class="header-anchor">#</a> 6.1. 前置知识</h2> <ol><li><div class="language- extra-class"><pre><code>  JS语言的执行环境是&quot;单线程&quot;, 也就是我们写的所有js代码都是在一个线程(主线程)上执行
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  理解单线程: 
+</code></pre></div></li></ol> <p>(1)     就是指一次只能完成一件任务。
+(2)     如果有多个任务，就必须排队，前一个任务完成，再执行后面一个任务，以此类推
+3.       js执行任务的2种模式
+(1)     同步（Synchronous）
+①    后一个任务等待前一个任务结束，然后再执行，
+②    程序的执行顺序与任务的排列顺序是一致的、同步的
+(2)     异步（Asynchronous）
+①    每一个任务有一个或多个回调函数（callback），前一个任务结束后，不是执行后一个任务，而是执行回调函数，
+②    后一个任务则是不等前一个任务结束就执行，所以程序的执行顺序与任务的排列顺序是不一致的、异步的。
+4.       为什么需要异步JS?
+(1)     浏览器端:
+①    耗时很长的操作都应该异步执行，避免浏览器失去响应
+②    给时机让浏览器能去更新界面, 响应用户操作
+(2)     Node端:
+①    &quot;异步模式&quot;是唯一的模式，执行环境是单线程的
+②    处理请求的回调函数/数据库操作/文件读写操作都必须是异步处理, 否则处理多个请求时很快就会失去响应
+5.       JS常用的异步编码方式
+(1)     回调函数
+(2)     事件机制
+(3)     消息订阅与发布 / 全局事件总线
+(4)     Promise
+(5)     async &amp; await</p> <h2 id="_6-2-回调函数"><a href="#_6-2-回调函数" class="header-anchor">#</a> 6.2. 回调函数</h2> <ol><li><div class="language- extra-class"><pre><code>  异步编程最基本的方法, 所有模式都是在此基础上进行封装扩展而来
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  回调函数的执行模式:
+</code></pre></div></li></ol> <p>(1)     异步执行
+(2)     同步执行
+3.       异步回调的缺点:
+(1)     不利于代码的阅读和维护，各个部分之间高度耦合。
+(2)     容易导致回调地狱问题</p> <h2 id="_6-3-事件监听"><a href="#_6-3-事件监听" class="header-anchor">#</a> 6.3. 事件监听</h2> <ol><li><div class="language- extra-class"><pre><code>  事件驱动模式: 
+</code></pre></div></li></ol> <p>(1)     任务的执行不取决于代码定义的顺序，而取决于某个事件是否发生
+(2)     事件监听函数定义时不会执行, 只有当事件发生(分发事件)后才执行
+2.       分类:
+(1)     原生DOM事件
+(2)     自定义事件
+3.       操作:
+(1)     在某个元素/组件对象上绑定特定事件监听
+(2)     在某个元素/组件对象上分发事件
+4.       特点:
+(1)     针对某个DOM元素绑定监听和分发事件
+(2)     针对某个组件对象绑定监听和分发事件</p> <h2 id="_6-4-消息订阅-发布与全局事件总线"><a href="#_6-4-消息订阅-发布与全局事件总线" class="header-anchor">#</a> 6.4. 消息订阅/发布与全局事件总线</h2> <ol><li><div class="language- extra-class"><pre><code>  消息订阅/发布:
+</code></pre></div></li></ol> <p>订阅全局消息
+发布全局消息
+2.       全局事件总线:
+绑定事件监听
+分发事件
+3.       特点:
+分发事件后, 所有同名的事件监听回调都会调用</p> <h2 id="_6-5-promise"><a href="#_6-5-promise" class="header-anchor">#</a> 6.5. Promise</h2> <ol><li><div class="language- extra-class"><pre><code>  实现异步编程新的通用解决方案
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  相对于纯回调的优势
+</code></pre></div></li></ol> <p>(1)     指定异步回调函数的方式更灵活(可以在启动异步任务后,甚至可以在任务完成后)
+(2)     通过then的链式调用解决回调地狱的问题
+3.       不足: 还需要指定回调函数</p> <h2 id="_6-6-async-await"><a href="#_6-6-async-await" class="header-anchor">#</a> 6.6. async/await</h2> <ol><li><div class="language- extra-class"><pre><code>  基于promise的语法糖, 简化了promise对象的使用(不再使用回调函数编码)
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  以同步编码方式实现的异步流程
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  是js异步编程的终极解决方案(基本上可以这样说)
+</code></pre></div></li></ol> <h2 id="_6-7-js事件循环机制"><a href="#_6-7-js事件循环机制" class="header-anchor">#</a> 6.7. JS事件循环机制</h2> <ol><li><div class="language- extra-class"><pre><code>  js是单线程运行的
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  js的回调函数可以异步执行, 也可以同步执行
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  js通过event-loop机制实现了js的单线程异步执行
+</code></pre></div></li></ol> <p>(1)     JS引擎解析执行js代码总是在主线程执行(WebWorks除外)
+(2)     浏览器有在分线程执行的对应管理模块(浏览器是多线程执行的)
+①    定时器
+②    DOM事件监听
+③    ajax请求
+④    Promise
+⑤    MutationObserver
+(3)     JS引擎有专门的回调队列, 缓存待执行的回调函数
+①    宏队列
+②    微队列</p> <h2 id="_6-8-promise深入理解"><a href="#_6-8-promise深入理解" class="header-anchor">#</a> 6.8. Promise深入理解</h2> <ol><li><div class="language- extra-class"><pre><code>  如何改变promise的状态?
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  一个promise指定多个成功/失败回调函数, 都会调用吗?
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  promise.then()返回的新promise的结果状态由什么决定?
+</code></pre></div></li></ol> <p>(1)     返回一个非promise值  resolved
+(2)     抛出异常  rejected
+(3)     返回一个promise
+①    成功了  resolved
+②    失败了 rejected
+③    pending  pending
+4.       改变promise状态和指定回调函数谁先谁后?
+5.       promise如何串连多个操作任务?
+6.       promise异常传(穿)透?
+7.       中断promise链</p> <h2 id="_6-9-自定义promise"><a href="#_6-9-自定义promise" class="header-anchor">#</a> 6.9. 自定义Promise</h2> <ol><li><div class="language- extra-class"><pre><code>  定义整体结构
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Promise构造函数的实现
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  promise.then()/catch()的实现
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Promise.resolve()/reject()的实现
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Promise.all/race()的实现
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  Promise.resolveDelay()/rejectDelay()的实现
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  ES6 class版本
+</code></pre></div></li></ol> <h1 id="_7-前后台交互"><a href="#_7-前后台交互" class="header-anchor">#</a> 7.  前后台交互</h1> <h2 id="_7-1-接口的理解-测试-模拟"><a href="#_7-1-接口的理解-测试-模拟" class="header-anchor">#</a> 7.1. 接口的理解/测试/模拟</h2> <ol><li><div class="language- extra-class"><pre><code>  前后台交互接口: 请求地址 / 请求方式 / 请求参数格式 / 响应数据格式
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  测试接口: 使用postman
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  模拟(mock)接口: 使用mockjs / json-server / webpack / node&amp;express
+</code></pre></div></li></ol> <h2 id="_7-2-ajax请求"><a href="#_7-2-ajax请求" class="header-anchor">#</a> 7.2. ajax请求</h2> <ol><li><div class="language- extra-class"><pre><code>  区别ajax请求与一般的HTTP请求
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  原生ajax请求: XHR与fetch
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  XHR的基本编码流程
+</code></pre></div></li></ol> <h2 id="_7-3-解决ajax跨域问题的常见技巧"><a href="#_7-3-解决ajax跨域问题的常见技巧" class="header-anchor">#</a> 7.3. 解决ajax跨域问题的常见技巧</h2> <ol><li><div class="language- extra-class"><pre><code>  JSONP： json with padding（垫子）
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  CORS: 服务器端设置响应头：Access-Control-Allow-Origin: www.taobao.com
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  代理
+</code></pre></div></li></ol> <h2 id="_7-4-axios的理解和使用"><a href="#_7-4-axios的理解和使用" class="header-anchor">#</a> 7.4. axios的理解和使用</h2> <h3 id="_7-4-1-axios的特点"><a href="#_7-4-1-axios的特点" class="header-anchor">#</a> 7.4.1. axios的特点</h3> <p>(1)     基于xhr/http包 + promise的异步ajax请求库
+(2)     浏览器端/node端都可以使用
+(3)     支持请求／响应拦截器
+(4)     支持请求取消
+(5)     请求/响应数据转换
+(6)     批量发送多个请求</p> <h3 id="_7-4-2-axios的常用语法"><a href="#_7-4-2-axios的常用语法" class="header-anchor">#</a> 7.4.2. axios的常用语法</h3> <p>axios(config): 通用/最本质的发任意类型请求的方式
+axios(url[, config]): 可以只指定url发get请求
+axios.request(config): 等同于axios(config)
+axios.get(url[, config]): 发get请求
+axios.delete(url[, config]): 发delete请求
+axios.post(url[, data, config]): 发post请求
+axios.put(url[, data, config]): 发put请求</p> <p>axios.create([config]): 创建一个新的axios(它没有下面的功能)</p> <p>axios.defaults.xxx: 请求的默认全局配置</p> <p>axios.interceptors.request.use(): 添加请求拦截器
+axios.interceptors.response.use(): 添加响应拦截器</p> <p>axios.Cancel(): 用于创建取消请求的错误对象
+axios.CancelToken(): 用于创建取消请求的token对象
+axios.isCancel(): 是否是一个取消请求的错误</p> <p>axios.all(promises): 用于批量执行多个异步请求
+axios.spread(): 用来指定接收所有成功数据的回调函数的方法</p> <h2 id="_7-5-axios的二次封装"><a href="#_7-5-axios的二次封装" class="header-anchor">#</a> 7.5. axios的二次封装</h2> <ol><li><div class="language- extra-class"><pre><code>  请求loading
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  token处理: 通过请求头携带token数据, 对token进行校验处理
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  异步请求成功的数据不是response, 而是response.data
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  统一处理请求异常
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  对请求体参数进行urlencode处理, 而不使用默认的json方式(后台接口不支持)
+</code></pre></div></li></ol> <h2 id="_7-6-axios的核心实现分析"><a href="#_7-6-axios的核心实现分析" class="header-anchor">#</a> 7.6. axios的核心实现分析</h2> <h3 id="_7-6-1-instance与axios的区别"><a href="#_7-6-1-instance与axios的区别" class="header-anchor">#</a> 7.6.1. instance与axios的区别?</h3> <ol><li><div class="language- extra-class"><pre><code> 相同: 
+</code></pre></div></li></ol> <p>(1)    都是一个能发任意请求的函数: request(config)
+(2)    都有发特定请求的各种方法: get()/post()/put()/delete()
+(3)    都有默认配置和拦截器的属性: defaults/interceptors
+2.      不同:
+(1)    默认配置不一样, 且相互之间是独立的
+(2)    instance没有axios后面添加的一些方法: create()/CancelToken()/all()</p> <h3 id="_7-6-2-axios运行的整体流程"><a href="#_7-6-2-axios运行的整体流程" class="header-anchor">#</a> 7.6.2. axios运行的整体流程?</h3> <h3 id="_7-6-3-axios的请求-响应拦截器是什么"><a href="#_7-6-3-axios的请求-响应拦截器是什么" class="header-anchor">#</a> 7.6.3. axios的请求/响应拦截器是什么?</h3> <ol><li><div class="language- extra-class"><pre><code> 请求拦截器: 
+</code></pre></div></li></ol> <p>在真正发送请求前执行的回调函数
+可以对请求进行检查或配置进行特定处理
+成功的回调函数, 传递的默认是config(也必须是)
+失败的回调函数, 传递的默认是error</p> <ol start="2"><li><div class="language- extra-class"><pre><code> 响应拦截器
+</code></pre></div></li></ol> <p>在请求得到响应后执行的回调函数
+可以对响应数据进行特定处理
+成功的回调函数, 传递的默认是response
+失败的回调函数, 传递的默认是error</p> <h3 id="_7-6-4-axios的请求-响应数据转换器是什么"><a href="#_7-6-4-axios的请求-响应数据转换器是什么" class="header-anchor">#</a> 7.6.4. axios的请求/响应数据转换器是什么?</h3> <ol><li><div class="language- extra-class"><pre><code> 请求转换器: 对请求头和请求体数据进行特定处理的函数
+</code></pre></div></li></ol> <p>if (utils.isObject(data)) {
+setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+return JSON.stringify(data);
+}
+2.      响应转换器: 将响应体json字符串解析为js对象或数组的函数
+response.data = JSON.parse(response.data)</p> <h1 id="_8-webpack打包项目"><a href="#_8-webpack打包项目" class="header-anchor">#</a> 8.  Webpack打包项目</h1> <h2 id="_8-1-webpack的理解"><a href="#_8-1-webpack的理解" class="header-anchor">#</a> 8.1. webpack的理解</h2> <ol><li><div class="language- extra-class"><pre><code> 本质上，webpack 是一个现代 JavaScript 应用程序的静态模块打包工具
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> 当 webpack 处理应用程序时，它会在内部构建一个依赖图(dependency graph)，此依赖图会映射项目所需的每个模块，并生成一个或多个 bundle。
+</code></pre></div></li></ol> <h2 id="_8-2-webpack的几个核心概念"><a href="#_8-2-webpack的几个核心概念" class="header-anchor">#</a> 8.2. webpack的几个核心概念</h2> <ol><li><div class="language- extra-class"><pre><code> **入口(entry)**: 打包依赖图的入口js
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> **输出(output)**: 打包生成的bundle  
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> **loader**: webpack 只能理解 JS 和 JSON 文件, loader打包其它类型模块
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> **插件(plugin)**: 用来处理各种各样的任务(webpack和loader处理不了)
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> **模式(mode)**: 用于启用 webpack 内置的一系列配置
+</code></pre></div></li></ol> <h2 id="_8-3-webpack常用一级配置"><a href="#_8-3-webpack常用一级配置" class="header-anchor">#</a> 8.3. webpack常用一级配置</h2> <ol><li><div class="language- extra-class"><pre><code> entry
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> output
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> module &amp; rules
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> plugins
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> mode
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> devServer
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> devtool
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> resolve
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> optimization
+</code></pre></div></li></ol> <h2 id="_8-4-说说几个常见的loader"><a href="#_8-4-说说几个常见的loader" class="header-anchor">#</a> 8.4. 说说几个常见的loader</h2> <ol><li><div class="language- extra-class"><pre><code> babel-loader
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> css-loader/style-loader/less-loader/stylus-loader/ sass-loader/postcss-loader
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> file-loader / url-loader
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> eslint-loader
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  vue-loader/vue-style-loader
+</code></pre></div></li></ol> <h2 id="_8-5-说说几个常见的plugin"><a href="#_8-5-说说几个常见的plugin" class="header-anchor">#</a> 8.5. 说说几个常见的plugin</h2> <ol><li><div class="language- extra-class"><pre><code> html-webpack-plugin
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> copy-webpack-plugin
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> clean-webpack-plugin
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> optimize-css-assets-webpack-plugin
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> webpack-bundle-analyzer
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> webpack.HotModuleReplacementPlugin
+</code></pre></div></li></ol> <h2 id="_8-6-区别plugin与loader"><a href="#_8-6-区别plugin与loader" class="header-anchor">#</a> 8.6. 区别plugin与loader</h2> <ol><li><div class="language- extra-class"><pre><code> loader:  用于加载特定类型的资源文件, webpack本身只能打包js, 如果打包css就需要css-loader/style-loader, 如果打包图片就需要file-loader/url-loader
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> plugin: 用来扩展webpack其它方面的功能, 如页面引入打包文件需要html-webpack-plugin, 删除文件需要clean-webpack-plugin
+</code></pre></div></li></ol> <h2 id="_8-7-区别module-chunk-和-bundle"><a href="#_8-7-区别module-chunk-和-bundle" class="header-anchor">#</a> 8.7. 区别module，chunk 和 bundle ?</h2> <ol><li><div class="language- extra-class"><pre><code> module: 我们手写下一个一个的文件
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> webpack开始打包后, 会根据文件引用关系生成内存中的几个 chunk 文件
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> 保存到本地的是bundle文件, 一般一个chunk对应一个bundle, 但也可能一个chunk对应多个bundle(拆分样式打包)
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> 拆分js是在生成chunk前, 所以拆分出的js都是一个单独的chunk
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> 拆分css是在生成chunk后, 所以拆分出的css与js共用一个chunk
+</code></pre></div></li></ol> <h2 id="_8-8-区别webpackprefetch与webpackpreload"><a href="#_8-8-区别webpackprefetch与webpackpreload" class="header-anchor">#</a> 8.8. 区别webpackPrefetch与webpackPreload</h2> <p>webpack4添加的魔法注释功能, 可以使用preload-webpack-plugin@next进行处理</p> <ol><li><div class="language- extra-class"><pre><code> webpackPreload: 
+</code></pre></div></li></ol> <p>(1)    同时并行请求加载, 针对当前就需要的bundle文件
+(2)    <link href="’’" rel="preload">
+2.      webpackPrefetch:
+(1)    空闲时才请求加载, 针对其它路由需要的bundle文件
+(2)    <link href="’’" rel="prefectch"></p> <h2 id="_8-9-区别hash、chunkhash、contenthash"><a href="#_8-9-区别hash、chunkhash、contenthash" class="header-anchor">#</a> 8.9. 区别hash、chunkhash、contenthash</h2> <ol><li><div class="language- extra-class"><pre><code> 理解
+</code></pre></div></li></ol> <p>(1)    hash整体模块文件内容的md5值
+(2)    chunkhash当前chunk内容的md5值
+(3)    contenthash当前bundle内容的md5值
+2.      使用
+(1)    js/css/img使用contenthash
+(2)    img/audio/video使用hash时本质还是用的contenthash
+<strong>3.      注意</strong> <strong>用hash有什么问题?</strong> <strong>用chunkhash有什么问题?</strong></p> <h2 id="_8-10-区别source-map-中inline与eval-cheap与module"><a href="#_8-10-区别source-map-中inline与eval-cheap与module" class="header-anchor">#</a> 8.10. 区别source-map 中inline与eval, cheap与module</h2> <ol><li><div class="language- extra-class"><pre><code> Inline
+</code></pre></div></li></ol> <p>(1)    生成全部的source map后整体内联到打包文件中
+(2)    更新代码时完全重新生成source map
+2.      eval
+(1)    以模块为单位生成source map内联到打包文件中
+(2)    更新代码时只会重新生成相应的source map
+(3)    主要是更新打包速度快于inline
+3.      cheap
+(1)    只记录代码行号, 不记录列号
+(2)    只映射自定义模块
+4.      module
+(1)    只记录代码行号, 不记录列号
+(2)    只映射第三方模块
+<strong>最佳实践:</strong> <strong>开发环境------devtool: 'cheap-module-eval-source-map'</strong> <strong>测试生产环境-----devtool: 'cheap-module-source-map'</strong> <strong>上线生产环境-----devtool: 'none'</strong></p> <h2 id="_8-11-说说webpack中babel的使用"><a href="#_8-11-说说webpack中babel的使用" class="header-anchor">#</a> 8.11. 说说webpack中babel的使用</h2> <ol><li><div class="language- extra-class"><pre><code>  使用@babel/core和@babel/preset-env
+</code></pre></div></li></ol> <p>(1)     只能编译ES6的新语法(转换为ES5相应的语法)
+(2)     问题: 不能处理ES6的新API, 在相对低版本浏览器中不能运行
+2.       使用@babel/polyfill
+(1)     内部通过core-js提供了新API的实现
+(2)     问题: 默认是打包整体包, 导致打包文件太大
+3.       实现polyfill的按需要引入打包
+(1)     useBuiltIns: 'usage'</p> <h2 id="_8-12-webpack如何优化打包文件"><a href="#_8-12-webpack如何优化打包文件" class="header-anchor">#</a> 8.12. webpack如何优化打包文件</h2> <ol><li><div class="language- extra-class"><pre><code>  目标
+</code></pre></div></li></ol> <p>兼容性 / 减小打包文件/ 懒加载 / 预加载 / 首屏加载优化
+2.       常用技巧
+(1)     兼容低版本浏览器
+(2)     拆分打包 &amp; 压缩
+(3)     异步/懒加载
+(4)     预取/预加载
+(5)     打包文件hash化(利用浏览缓存)
+(6)     Tree Shaking
+(7)     Scope Hoisting(作用域提升)
+(8)     服务器(nginx)开启gzip
+(9)     打包文件分析</p> <h2 id="_8-13-webpack如何优化打包"><a href="#_8-13-webpack如何优化打包" class="header-anchor">#</a> 8.13. webpack如何优化打包</h2> <ol start="3"><li><div class="language- extra-class"><pre><code>  目标
+</code></pre></div></li></ol> <p>加快打包  /  提升开发调试体验
+4.       常用技巧
+(1)     loader增加include匹配特定条件
+(2)     合理配置extensions扩展名
+(3)     配置resolve.alias字段, 指定常用的路径别名
+(4)     dll第三方模块进行预打包==&gt; 使HardSourceWebpackPlugin更简洁更快
+(5)     eslint代码规范检查
+(6)     sourcemap 源码映射
+(7)     live-reload / hot-reload
+(8)     加快loader处理: 多线程/多进程loader</p> <h1 id="_9-手写代码-工具函数库"><a href="#_9-手写代码-工具函数库" class="header-anchor">#</a> 9.  手写代码(工具函数库)</h1> <p><a href="https://github.com/zxfjd3g/atguigu-utils" target="_blank" rel="noopener noreferrer">https://github.com/zxfjd3g/atguigu-utils<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_9-1-函数相关"><a href="#_9-1-函数相关" class="header-anchor">#</a> 9.1. 函数相关</h2> <h3 id="_9-1-1-函数对象的call-apply-bind"><a href="#_9-1-1-函数对象的call-apply-bind" class="header-anchor">#</a> 9.1.1. 函数对象的call() / apply() / bind()</h3> <h3 id="_9-1-2-函数的节流-throttle-与防抖-debounce"><a href="#_9-1-2-函数的节流-throttle-与防抖-debounce" class="header-anchor">#</a> 9.1.2. 函数的节流(throttle)与防抖(debounce)</h3> <h2 id="_9-2-数组相关"><a href="#_9-2-数组相关" class="header-anchor">#</a> 9.2. 数组相关</h2> <h3 id="_9-2-1-数组声明式系列方法"><a href="#_9-2-1-数组声明式系列方法" class="header-anchor">#</a> 9.2.1. 数组声明式系列方法</h3> <h3 id="_9-2-2-数组去重-unique"><a href="#_9-2-2-数组去重-unique" class="header-anchor">#</a> 9.2.2. 数组去重(unique)</h3> <h3 id="_9-2-3-数组合并-concat-与切片-slice"><a href="#_9-2-3-数组合并-concat-与切片-slice" class="header-anchor">#</a> 9.2.3. 数组合并(concat)与切片(slice)</h3> <h3 id="_9-2-4-数组扁平化-flatten"><a href="#_9-2-4-数组扁平化-flatten" class="header-anchor">#</a> 9.2.4. 数组扁平化(flatten)</h3> <h3 id="_9-2-5-数组取真与分块"><a href="#_9-2-5-数组取真与分块" class="header-anchor">#</a> 9.2.5. 数组取真与分块</h3> <h3 id="_9-2-6-数组取差异与合并"><a href="#_9-2-6-数组取差异与合并" class="header-anchor">#</a> 9.2.6. 数组取差异与合并</h3> <h3 id="_9-2-7-删除数组中部分元素"><a href="#_9-2-7-删除数组中部分元素" class="header-anchor">#</a> 9.2.7. 删除数组中部分元素</h3> <h3 id="_9-2-8-得到数组的部分元素"><a href="#_9-2-8-得到数组的部分元素" class="header-anchor">#</a> 9.2.8. 得到数组的部分元素</h3> <h2 id="_9-3-对象相关"><a href="#_9-3-对象相关" class="header-anchor">#</a> 9.3. 对象相关</h2> <h3 id="_9-3-1-自定义new和instanceof工具函数"><a href="#_9-3-1-自定义new和instanceof工具函数" class="header-anchor">#</a> 9.3.1. 自定义new和instanceof工具函数</h3> <h3 id="_9-3-2-合并多个对象"><a href="#_9-3-2-合并多个对象" class="header-anchor">#</a> 9.3.2. 合并多个对象</h3> <h3 id="_9-3-3-对象-数组浅拷贝与深拷贝"><a href="#_9-3-3-对象-数组浅拷贝与深拷贝" class="header-anchor">#</a> 9.3.3. 对象/数组浅拷贝与深拷贝</h3> <h2 id="_9-4-字符串相关"><a href="#_9-4-字符串相关" class="header-anchor">#</a> 9.4. 字符串相关</h2> <h3 id="_9-4-1-字符串倒序"><a href="#_9-4-1-字符串倒序" class="header-anchor">#</a> 9.4.1. 字符串倒序</h3> <h3 id="_9-4-2-字符串是否是回文"><a href="#_9-4-2-字符串是否是回文" class="header-anchor">#</a> 9.4.2. 字符串是否是回文</h3> <h3 id="_9-4-3-截取字符串"><a href="#_9-4-3-截取字符串" class="header-anchor">#</a> 9.4.3. 截取字符串</h3> <h2 id="_9-5-事件总线"><a href="#_9-5-事件总线" class="header-anchor">#</a> 9.5. 事件总线</h2> <h3 id="_9-5-1-eventbus-包含所有功能的全局事件总线对象"><a href="#_9-5-1-eventbus-包含所有功能的全局事件总线对象" class="header-anchor">#</a> 9.5.1. EventBus: 包含所有功能的全局事件总线对象</h3> <h3 id="_9-5-2-eventbus-on-eventname-listener-绑定事件监听"><a href="#_9-5-2-eventbus-on-eventname-listener-绑定事件监听" class="header-anchor">#</a> 9.5.2. EventBus.on(eventName, listener): 绑定事件监听</h3> <h3 id="_9-5-3-eventbus-emit-eventname-data-分发事件"><a href="#_9-5-3-eventbus-emit-eventname-data-分发事件" class="header-anchor">#</a> 9.5.3. EventBus.emit(eventName, data): 分发事件</h3> <h3 id="_9-5-4-eventbus-off-eventname-解绑事件监听"><a href="#_9-5-4-eventbus-off-eventname-解绑事件监听" class="header-anchor">#</a> 9.5.4. EventBus.off(eventName): 解绑事件监听</h3> <h2 id="_9-6-消息订阅与发布"><a href="#_9-6-消息订阅与发布" class="header-anchor">#</a> 9.6. 消息订阅与发布</h2> <h3 id="_9-6-1-pubsub-包含所有功能的订阅-发布消息的管理者"><a href="#_9-6-1-pubsub-包含所有功能的订阅-发布消息的管理者" class="header-anchor">#</a> 9.6.1. PubSub: 包含所有功能的订阅/发布消息的管理者</h3> <h3 id="_9-6-2-pubsub-subscribe-msg-subscriber-订阅消息"><a href="#_9-6-2-pubsub-subscribe-msg-subscriber-订阅消息" class="header-anchor">#</a> 9.6.2. PubSub.subscribe(msg, subscriber): 订阅消息</h3> <h3 id="_9-6-3-pubsub-publish-msg-data-异步发布消息"><a href="#_9-6-3-pubsub-publish-msg-data-异步发布消息" class="header-anchor">#</a> 9.6.3. PubSub.publish(msg, data): 异步发布消息</h3> <h3 id="_9-6-4-pubsub-publishsync-msg-data-同步发布消息"><a href="#_9-6-4-pubsub-publishsync-msg-data-同步发布消息" class="header-anchor">#</a> 9.6.4. PubSub.publishSync(msg, data): 同步发布消息</h3> <h3 id="_9-6-5-pubsub-unsubscribe-flag-取消订阅"><a href="#_9-6-5-pubsub-unsubscribe-flag-取消订阅" class="header-anchor">#</a> 9.6.5. PubSub.unsubscribe(flag): 取消订阅</h3> <h2 id="_9-7-promise"><a href="#_9-7-promise" class="header-anchor">#</a> 9.7. Promise</h2> <h3 id="_9-7-1-定义整体结构"><a href="#_9-7-1-定义整体结构" class="header-anchor">#</a> 9.7.1. 定义整体结构</h3> <h3 id="_9-7-2-promise构造函数的实现"><a href="#_9-7-2-promise构造函数的实现" class="header-anchor">#</a> 9.7.2. Promise构造函数的实现</h3> <h3 id="_9-7-3-promise-then-catch-的实现"><a href="#_9-7-3-promise-then-catch-的实现" class="header-anchor">#</a> 9.7.3. promise.then()/catch()的实现</h3> <h3 id="_9-7-4-promise-resolve-reject-的实现"><a href="#_9-7-4-promise-resolve-reject-的实现" class="header-anchor">#</a> 9.7.4. Promise.resolve()/reject()的实现</h3> <h3 id="_9-7-5-promise-all-race-的实现"><a href="#_9-7-5-promise-all-race-的实现" class="header-anchor">#</a> 9.7.5. Promise.all/race()的实现</h3> <h3 id="_9-7-6-promise-resolvedelay-rejectdelay-的实现"><a href="#_9-7-6-promise-resolvedelay-rejectdelay-的实现" class="header-anchor">#</a> 9.7.6. Promise.resolveDelay()/rejectDelay()的实现</h3> <h2 id="_9-8-ajax函数封装-axios"><a href="#_9-8-ajax函数封装-axios" class="header-anchor">#</a> 9.8. ajax函数封装: axios</h2> <h2 id="_9-9-数据结构与排序算法"><a href="#_9-9-数据结构与排序算法" class="header-anchor">#</a> 9.9. 数据结构与排序算法</h2> <h3 id="_9-9-1-自定义栈-stack"><a href="#_9-9-1-自定义栈-stack" class="header-anchor">#</a> 9.9.1. 自定义栈: Stack</h3> <h3 id="_9-9-2-自定义队列-queue"><a href="#_9-9-2-自定义队列-queue" class="header-anchor">#</a> 9.9.2. 自定义队列: Queue</h3> <h3 id="_9-9-3-自定义优先级队列-priorityqueue"><a href="#_9-9-3-自定义优先级队列-priorityqueue" class="header-anchor">#</a> 9.9.3. 自定义优先级队列: PriorityQueue</h3> <h3 id="_9-9-4-简单排序-冒泡-选择-插入"><a href="#_9-9-4-简单排序-冒泡-选择-插入" class="header-anchor">#</a> 9.9.4. 简单排序: 冒泡 / 选择 / 插入</h3> <h3 id="_9-9-5-高级排序-希尔"><a href="#_9-9-5-高级排序-希尔" class="header-anchor">#</a> 9.9.5. 高级排序: 希尔</h3> <h1 id="_10-原理结构图分析"><a href="#_10-原理结构图分析" class="header-anchor">#</a> 10.       原理结构图分析</h1> <h2 id="_10-1-原型与原型链"><a href="#_10-1-原型与原型链" class="header-anchor">#</a> 10.1. 原型与原型链</h2> <p><em>function Foo () {}</em> <em>const f1 = new Foo()</em> <em>const f2 = new Foo()</em> <em>const o1 = new Object()</em> <em>const o2 = {}</em></p> <h2 id="_10-2-js事件循环-event-loop-机制"><a href="#_10-2-js事件循环-event-loop-机制" class="header-anchor">#</a> 10.2. JS事件循环(Event Loop)机制</h2> <h2 id="_10-3-redux结构图"><a href="#_10-3-redux结构图" class="header-anchor">#</a> 10.3. redux结构图</h2> <h2 id="_10-4-vuex结构图"><a href="#_10-4-vuex结构图" class="header-anchor">#</a> 10.4. vuex结构图</h2> <h2 id="_10-5-vue的数据绑定原理图"><a href="#_10-5-vue的数据绑定原理图" class="header-anchor">#</a> 10.5. Vue的数据绑定原理图</h2> <h1 id="_11-框架必备技能"><a href="#_11-框架必备技能" class="header-anchor">#</a> 11.       框架必备技能</h1> <h2 id="vue框架"><a href="#vue框架" class="header-anchor">#</a> Vue框架</h2> <h2 id="_11-1-区别单向数据流与双向数据绑定"><a href="#_11-1-区别单向数据流与双向数据绑定" class="header-anchor">#</a> 11.1. 区别单向数据流与双向数据绑定</h2> <ol><li>单向数据流
+用户操作界面, 调用更新状态数据的方法, 一旦状态数据变化, 自动更新相应的界面</li> <li>双向数据绑定
+在原在的基础上, 通过v-model自动给表单项输入绑定监听, 将输入数据不通过action直接保存到state中</li></ol> <h2 id="_11-2-生命周期函数"><a href="#_11-2-生命周期函数" class="header-anchor">#</a> 11.2. 生命周期函数</h2> <ol><li>vue的生命周期: 创建=&gt;挂载=&gt;更新=&gt;销毁</li> <li>vue的生命周期勾子:
+(1)     初始化(一次): beforeCreate() =&gt; created() =&gt; beforeMount() =&gt; mounted()
+(2)     更新(n次): beforeUpdate() =&gt; updated()
+(3)     销毁(一次): beforeDestroy() =&gt; destroyed()
+(4)     组件缓存/激活: deactivated() / activated()
+(5)     捕获子组件错误: errorCaptured()</li> <li>一些细节
+(1) beforeCreate(): 在实例初始化之后调用, data和methods都还没有初始化完成, 通过this不能访问
+(2) created(): 此时data和methods都已初始化完成, 可以通过this去操作, 可以在此发ajax请求
+(3) beforeMount(): 模板已经在内存中编译, 但还没有挂载到页面上, 不能通过ref找到对应的标签对象
+(4) mounted(): 页面已经初始显示, 可以通过ref找到对应的标签, 也可以选择此时发ajax请求
+(5) beforeUpdate(): 在数据更新之后, 界面更新前调用, 只能访问到原有的界面
+(6) updated(): 在界面更新之后调用, 此时可以访问最新的界面
+(7) beforeDestroy(): 实例销毁之前调用, 此时实例仍然可以正常工作
+(8) destroyed(): Vue 实例销毁后调用, 实例已经无法正常工作了
+(9) deactivated():组件失活, 但没有死亡
+(10) activated(): 组件激活, 被复用
+(11) errorCaptured(): 用于捕获子组件的错误,return false可以阻止错误向上冒泡(传递)</li></ol> <h2 id="_11-3-组件通信方式"><a href="#_11-3-组件通信方式" class="header-anchor">#</a> 11.3. 组件通信方式</h2> <h2 id="_11-4-路由"><a href="#_11-4-路由" class="header-anchor">#</a> 11.4. 路由</h2> <h3 id="_11-4-1-路由跳转"><a href="#_11-4-1-路由跳转" class="header-anchor">#</a> 11.4.1. 路由跳转</h3> <ol><li><div class="language- extra-class"><pre><code>  创建路由器: new VueRouter({ })
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  注册路由: routes: [ {path:’路由路径’, component: ‘路由组件’} ]
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  注册路由器: new Vue({router})
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  路由链接: &lt;router-link :to=&quot;{name: 'home', params: {id: 1}}&quot;&gt;home&lt;/router-link&gt;
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  编程式路由跳转: router.push()/replace()/back()
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  自动跳转的路由: { path: '/', redirect: '/home' }
+</code></pre></div></li></ol> <h3 id="_11-4-2-路由传参"><a href="#_11-4-2-路由传参" class="header-anchor">#</a> 11.4.2. 路由传参</h3> <p>**1). params:      **
+{name: ‘xxx’, path: “/person/:id”, component: Person}
+router.push(‘/person/3’)
+router.push({name: ‘xxx’, params: {id: 3}})
+this.$route.params.id</p> <p><strong>2). query:</strong>
+**    this.$router.push(‘/xxx?id=3’)**
+小细节：params只能用name，query既可以指定name，也可以指定path</p> <p>| &lt;<strong>router-link :to='</strong>{<strong>name</strong>: <strong>&quot;Test1&quot;</strong>, <strong>params</strong>: {<strong>id</strong>: <strong>&quot;111&quot;</strong>}}<strong>'</strong>&gt;test1&lt;/<strong>router-link</strong>&gt;
+_ 
+_&lt;<strong>router-link :to='</strong>{<strong>name</strong>: <strong>&quot;Test2&quot;</strong>, <strong>query</strong>: {<strong>id</strong>: <strong>&quot;222&quot;</strong>}}<strong>'</strong>&gt;test2&lt;/<strong>router-link</strong>&gt;</p> <table><thead><tr><th>&lt;<strong>router-link :to='{path:&quot;/hello/test2&quot;, query</strong>: {<strong>id</strong>: <strong>&quot;222&quot;</strong>}<strong>}'</strong>&gt;test2&lt;/<strong>router-link</strong>&gt;</th></tr></thead> <tbody></tbody></table> <p><strong>3). meta:</strong></p> <p><strong>4). props:</strong> <strong>布尔值模式: 解耦路由组件</strong></p> <p><strong>对象模式：props静态传参</strong> <strong>函数模式: props根据不同的路由对象动态传参</strong>
+备注：不管通过哪种props方式传参，记住在组件内部通过props声明接收</p> <h2 id="react框架"><a href="#react框架" class="header-anchor">#</a> React框架</h2> <h2 id="_11-5-react核心思想"><a href="#_11-5-react核心思想" class="header-anchor">#</a> 11.5. React核心思想</h2> <ol><li><div class="language- extra-class"><pre><code>  模块化，组件化
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  JSX语法
+</code></pre></div></li></ol> <p>a)       在js中直接写html
+b)      在html中可以写js，需要用{}包起来
+3.       组件的3个基本属性
+a)       state:  组件状态
+b)      props:  组件外部向组件内传递属性数据
+c)       refs:  标识组件对象或者真实dom对象</p> <h2 id="_11-6-react生命周期函数"><a href="#_11-6-react生命周期函数" class="header-anchor">#</a> 11.6. React生命周期函数</h2> <p>| componentWillMount() {
+<strong><em>console</em></strong>.log(<strong>'------componentWillMount 组件将要挂载------'</strong>);_}</p> <p>componentDidMount() {
+<strong><em>console</em></strong>.log(<strong>'-----componentDidMount 组件已挂载完毕--------'</strong>);
+<em>setTimeout</em>(() =&gt; {
+<strong>this</strong>.setState({
+<strong>msg</strong>: 123
+})
+}, 2000)
+}
+this.setState({})
+shouldComponentUpdate(nextProps, nextState) {
+<strong><em>console</em></strong>.log(<strong>'----shouldComponentUpdate 组件是否应该更新--------'</strong>);
+<em>// 该生命周期函数必须返回一个布尔值，来决定是否更新或者不更新 true: 更新，false: 不更新</em>  // 此生命周期函数的意义是用来做性能优化的，当传入的props，state和之前的没有变化或者不需要更新的时候，就return false
+// 这样就不会触发React DOM diff算法_  _<strong><em>console</em></strong>.log(nextProps, nextState);
+**return true
+**}</p> <p>componentWillReceiveProps(nextProps) {
+<strong><em>console</em></strong>.log(<strong>'----componentWillUpdate 组件接收新的props值 --------'</strong>);
+}</p> <p>componentWillUpdate() {
+<strong><em>console</em></strong>.log(<strong>'----componentWillUpdate 组件将要更新-------'</strong>);
+}
+componentDidUpdate() {
+<strong><em>console</em></strong>.log(<strong>'------componentDidUpdate 组件已更新完毕--------'</strong>);
+}</p> <p>componentWillUnmount() {
+<strong><em>console</em></strong>.log(<strong>'------componentWillUnmount 组件将要卸载-------'</strong>);
+}</p> <p>render () {
+<strong><em>console</em></strong>.log(<strong>'render 渲染'</strong>);
+**return **(
+&lt;<strong>div</strong>&gt;
+App组件。。。
+&lt;/<strong>div</strong>&gt;
+);</p> <table><thead><tr><th>}</th></tr></thead> <tbody></tbody></table> <h2 id="_11-7-组件通信"><a href="#_11-7-组件通信" class="header-anchor">#</a> 11.7. 组件通信</h2> <h3 id="_11-7-1-props"><a href="#_11-7-1-props" class="header-anchor">#</a> 11.7.1. props</h3> <ol><li><div class="language- extra-class"><pre><code>  父传子: 非函数属性
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  子传父: 函数属性
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  隔层组件或兄弟组件传递比较麻烦
+</code></pre></div></li></ol> <h3 id="_11-7-2-消息订阅与发布机制-pubsub"><a href="#_11-7-2-消息订阅与发布机制-pubsub" class="header-anchor">#</a> 11.7.2. 消息订阅与发布机制(pubsub)</h3> <ol><li><div class="language- extra-class"><pre><code>  订阅消息: PubSub.subscribe(‘消息名称’, callback)
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  发布消息: PubSub.publish(‘消息名称’, ‘发布数据’)
+</code></pre></div></li></ol> <h3 id="_11-7-3-redux"><a href="#_11-7-3-redux" class="header-anchor">#</a> 11.7.3. Redux</h3> <ol><li><div class="language- extra-class"><pre><code>  多用于中大型项目，组件嵌套层级较多，数据较为复杂的场景
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  何为 store
+</code></pre></div></li></ol> <p>(1)     store 是一个 javascript 对象，它保存了整个应用的 state。
+(2)     允许通过 getState() 访问 state
+(3)     通过 dispatch(action) 改变 state
+(4)     通过 subscribe(listener) 注册 listeners
+3.       何为 action
+(1)     action是一个纯 js对象，
+(2)     必须有一个 type 属性表明正在执行的 action 的类型, 还有一个携带数据的属性
+(3)     实质上，action 是将数据从应用程序发送到 store 的载体<br>
+4.       何为 reducer
+是纯函数，该函数以先前的state和一个action作为参数，并返回新的state。
+array.recuce((preTotal, item) =&gt; preTotal + item , 0)
+function count (state={}, action) {
+retrn newState
+}</p> <h2 id="_11-8-react路由"><a href="#_11-8-react路由" class="header-anchor">#</a> 11.8. React路由</h2> <h3 id="_11-8-1-路由跳转"><a href="#_11-8-1-路由跳转" class="header-anchor">#</a> 11.8.1. 路由跳转</h3> <ol><li><div class="language- extra-class"><pre><code>  路由器:  HashRouter, BrowserRouter
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  路由:  &lt;Route path='/home' component={Home}&gt;&lt;/Route&gt;
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  路由链接: &lt;Link to='/home'&gt; HOME&lt;/Link&gt;
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  路由重定向: &lt;Redirect to='/home'/&gt;
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  编程式路由导航: this.props.history.push/replace('/home')
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  路由精准匹配exact: 要求必须完全匹配指定的路由，默认进行的模糊匹配
+</code></pre></div></li></ol> <h3 id="_11-8-2-路由传参"><a href="#_11-8-2-路由传参" class="header-anchor">#</a> 11.8.2. 路由传参</h3> <p>**1.       **params传参推荐使用</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Link to='/home/homeChild/1'&gt;home子路由&lt;/Link&gt;
+
+   &lt;Route path='/home/homeChild/:id' component={HomeChild}&gt;&lt;/Route&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <ol start="2"><li><div class="language- extra-class"><pre><code>  query传参(不方便, 不建议使用)
+</code></pre></div></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Link to='/home/homeChild?id=1'&gt;home子路由&lt;/Link&gt;
+
+   &lt;Route path='/home/homeChild' component={HomeChild}&gt;&lt;/Route&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <ol start="3"><li><div class="language- extra-class"><pre><code>  props传参
+</code></pre></div></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Link to='/home/homeChild'&gt;home子路由&lt;/Link&gt;
+
+   &lt;Route path='/home/homeChild' render={() =&gt; &lt;HomeChild id={123}/&gt;}&gt;&lt;/Route&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <h2 id="jquery"><a href="#jquery" class="header-anchor">#</a> jQuery</h2> <h2 id="_11-9-整体理解"><a href="#_11-9-整体理解" class="header-anchor">#</a> 11.9. 整体理解</h2> <ol><li><div class="language- extra-class"><pre><code>  jQuery是一个功能强大的函数库, 封装了以下功能
+</code></pre></div></li></ol> <p>(1)     DOM的CRUD
+(2)     DOM事件处理
+(3)     ajax请求
+(4)     各种小的工具函数</p> <ol start="2"><li><div class="language- extra-class"><pre><code>  核心语法
+</code></pre></div></li></ol> <p>(1)     jQuery核心函数
+(2)     jQuery核心对象</p> <ol start="3"><li><div class="language- extra-class"><pre><code>  特点:
+</code></pre></div></li></ol> <p>(1)     链式调用
+(2)     读写合一
+(3)     更好的浏览器兼容性</p> <h2 id="_11-10-jquery核心函数"><a href="#_11-10-jquery核心函数" class="header-anchor">#</a> 11.10. jQuery核心函数</h2> <ol><li><div class="language- extra-class"><pre><code>  是什么?
+</code></pre></div></li></ol> <p>就是jquery库向外暴露的$和jQuery, 一般都用$</p> <ol start="2"><li><div class="language- extra-class"><pre><code>  它有2种使用方式:
+</code></pre></div></li></ol> <p>(1)     作为函数使用
+(2)     作为对象使用</p> <ol start="3"><li><div class="language- extra-class"><pre><code>  $作为函数使用
+</code></pre></div></li></ol> <p>(1)     参数为函数: 指定回调函数在页面加载完后执行
+(2)     参数是选择器字符串: 查找所有匹配的元素, 返回jQuery对象
+(3)     参数是标签格式字符串: 创建DOM对象, 返回jQuery对象
+(4)     参数是DOM元素: 返回包含此DOM元素的jQuery对象</p> <ol start="4"><li><div class="language- extra-class"><pre><code>  $作为函数对象使用
+</code></pre></div></li></ol> <p>(1)     发送ajax请求的各种方法: $.ajax()/get()/post()/getJSON()
+(2)     一些工具方法: $.each(array)/type(data)</p> <h2 id="_11-11-jquery核心对象"><a href="#_11-11-jquery核心对象" class="header-anchor">#</a> 11.11. jQuery核心对象</h2> <ol><li><div class="language- extra-class"><pre><code>  2种情况产生的对象 (内部包含n个dom元素对象)
+</code></pre></div></li></ol> <p>(1)     执行$函数返回的对象
+(2)     调用jQuery核心对象的方法返回的对象</p> <ol start="2"><li><div class="language- extra-class"><pre><code>  主要方法
+</code></pre></div></li></ol> <p>(1)     进行DOM进行增删改的方法
+(2)     对内部的DOM元素进行进一步过滤查找的方法
+(3)     进行事件处理的方法: 绑定监听/解绑监听/事件委派</p> <h2 id="_11-12-编码测试"><a href="#_11-12-编码测试" class="header-anchor">#</a> 11.12. 编码测试</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+
+   &lt;html lang=&quot;en&quot;&gt;
+
+   &lt;head&gt;
+
+   &lt;meta charset=&quot;UTF-8&quot;&gt;
+
+   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+
+   &lt;title&gt;Document&lt;/title&gt;
+
+   &lt;script src=&quot;https://cdn.bootcss.com/jquery/1.11.3/jquery.js&quot;&gt;&lt;/script&gt;
+
+   &lt;script&gt;
+
+     /*
+
+       $作为函数使用
+
+         a. 参数为函数: 指定回调函数在页面加载完后执行
+
+         b. 参数是选择器字符串: 查找所有匹配的元素, 返回jQuery对象
+
+         c. 参数是标签格式字符串: 创建DOM对象, 返回jQuery对象
+
+         d. 参数是DOM元素: 返回包含此DOM元素的jQuery对象
+
+     */
+
+     $(() =&gt; {
+
+       // 1. 给test1添加点击监听, 提示按钮的文本内容
+
+       $('#btn1').click(function () {
+
+         alert($(this).html())
+
+         $(this).html('test1111')
+
+       })
+
+   
+
+       // 2. 在页面的最后添加一个新的按钮
+
+       $('&lt;button&gt;test&lt;/button&gt;')
+
+         .click(function (event) {
+
+           alert(event.target.innerHTML)
+
+         })
+
+         .appendTo('body')
+
+       
+
+       /* 
+
+       $作为函数对象使用
+
+         a. 发送ajax请求的各种方法: $.ajax()/get()/post()/jsonp()
+
+         b. 一些工具方法: $.each(array)/type(data)
+
+       */
+
+       $.ajax({
+
+         url: 'https://api.github.com/search/repositories',
+
+         type: 'GET',
+
+         data: {
+
+           q: 'v',
+
+           sort: 'stars'
+
+         },
+
+         success: (data) =&gt; {
+
+           console.log(data)
+
+         },
+
+         error: () =&gt; {
+
+           alert('请求错误')
+
+         }
+
+       })
+
+   
+
+       const arr = [1, 3, 5]
+
+       $.each(arr, (index, value) =&gt; console.log(index, value))
+
+       console.log($.type(arr), $.type(arr[0]))
+
+   
+
+   
+
+       /* 
+
+       2种情况产生的jQuery核心对象 (内部包含n个dom元素对象)
+
+         a. 执行$函数返回的对象
+
+         b. 调用jQuery核心对象的方法返回的对象
+
+       */
+
+       const $lis = $('li')
+
+       const $firstLi = $lis.first()
+
+       console.log($firstLi.html())
+
+   
+
+       /* 
+
+       jQuery对象的主要方法
+
+         a. 进行DOM进行增删改的方法
+
+         b. 对内部的DOM元素进行进一步过滤查找的方法
+
+         c. 进行事件处理的方法: 绑定监听/解绑监听/事件委派
+
+       */
+
+       $('#btn2').click(function () {
+
+         $('ul').find('li&gt;button').not(':first').click(function () {
+
+           $(this).parent().remove()
+
+         })
+
+       })
+
+   
+
+       $('#btn3').click(function () {
+
+         $('&lt;li&gt;&lt;span&gt;X&lt;/span&gt;&lt;button&gt;testX&lt;/button&gt;&lt;/li&gt;').appendTo('ul')
+
+       })
+
+   
+
+       $('#btn4').click(function () {
+
+         $('ul').delegate('li:not(:first)&gt;button', 'click', function () {
+
+           $(this).parent().remove()
+
+         })
+
+       })
+
+   
+
+       $('#btn5').click(function () {
+
+         $('#btn1').unbind('click')
+
+         $('ul').undelegate('click')
+
+       })
+
+     })
+
+   &lt;/script&gt;
+
+   &lt;/head&gt;
+
+   &lt;body&gt;
+
+   &lt;!-- 
+
+     需求1: 点击test1按钮, 提示按钮的文本内容
+
+     需求2: 在页面的最后添加一个新的按钮
+
+     需求3: 发送ajax请求, 提示请求结果
+
+     需求4: 遍历数组, 得到不同数据的类型
+
+   --&gt;
+
+   &lt;button id=&quot;btn1&quot;&gt;test1&lt;/button&gt;
+
+   &lt;ul&gt;
+
+     &lt;li&gt;
+
+       &lt;span&gt;A&lt;/span&gt;
+
+       &lt;button&gt;testA&lt;/button&gt;
+
+     &lt;/li&gt;
+
+     &lt;li&gt;
+
+       &lt;span&gt;B&lt;/span&gt;
+
+       &lt;button&gt;testB&lt;/button&gt;
+
+     &lt;/li&gt;
+
+     &lt;li&gt;
+
+       &lt;span&gt;C&lt;/span&gt;
+
+       &lt;button&gt;testC&lt;/button&gt;
+
+     &lt;/li&gt;
+
+   &lt;/ul&gt;
+
+   
+
+   &lt;!-- 
+
+     需求5: 给列表中所有按钮添加点击监听, 点击删除当前行
+
+     需求6: 在最后添加一行
+
+     需求7: 与需求5功能一样, 但使用事件委托
+
+     需求8: 解除btn1上的点击监听和列表的委托点击监听
+
+   --&gt;
+
+   &lt;button id=&quot;btn2&quot;&gt;给列表中所有button添加点击监听&lt;/button&gt;&lt;br&gt;
+
+   &lt;button id=&quot;btn3&quot;&gt;向列表中添加一个列&lt;/button&gt;&lt;br&gt;
+
+   &lt;button id=&quot;btn4&quot;&gt;给列表中所有button添加点击监听(使用事件委托)&lt;/button&gt;&lt;br&gt;
+
+   &lt;button id=&quot;btn5&quot;&gt;解绑事件监听&lt;/button&gt;&lt;br&gt;
+
+   &lt;/body&gt;
+
+   &lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <h2 id="小程序"><a href="#小程序" class="header-anchor">#</a> 小程序</h2> <h2 id="_11-13-程序语法"><a href="#_11-13-程序语法" class="header-anchor">#</a> 11.13. 程序语法：</h2> <ol><li><div class="language- extra-class"><pre><code>没有DOM，一切基于组件化
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>小程序四个重要的文件:  *.wxml, *.wxss, *.js, *.json
+</code></pre></div></li></ol> <h2 id="_11-14-小程序发送请求"><a href="#_11-14-小程序发送请求" class="header-anchor">#</a> 11.14. 小程序发送请求</h2> <ol><li><div class="language- extra-class"><pre><code>语法: wx.request()
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>注意点:
+</code></pre></div></li></ol> <p>a)       发送的都是https请求
+b)      一个域名下最多配置20个域名
+c)       能处理的最大并发量是10个</p> <h2 id="_11-15-小程序本地数据存储"><a href="#_11-15-小程序本地数据存储" class="header-anchor">#</a> 11.15. 小程序本地数据存储</h2> <ol><li><div class="language- extra-class"><pre><code>语法: wx.setStorage, wx.getStorage, wx.setStorageSync, wx.getStorageSync
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>单个 key 允许存储的最大数据长度为 1MB，所有数据存储上限为 10MB。
+</code></pre></div></li></ol> <h2 id="_11-16-小程序获取openid流程"><a href="#_11-16-小程序获取openid流程" class="header-anchor">#</a> 11.16. 小程序获取openID流程</h2> <ol><li><div class="language- extra-class"><pre><code>  理解： openId是小程序用户的唯一标识，通常利用openId来验证小程序用户身份，做支付，账户管理等操作
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  openId由腾讯服务器提供的，必须满足： code + appID + appSecret
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  code是登录的临时凭证，通过wx.login()获取
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  将code发送给当前应用的服务器
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  当前应用的服务器将code + appID + appSecret发送给腾讯服务器换取:{openId, sessionKey}
+</code></pre></div></li></ol> <h2 id="_11-17-小程序支付流程"><a href="#_11-17-小程序支付流程" class="header-anchor">#</a> 11.17. 小程序支付流程:</h2> <p><a href="https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_4&amp;index=3" target="_blank" rel="noopener noreferrer">https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=7_4&amp;index=3#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ol><li><div class="language- extra-class"><pre><code>  请求下单支付：将商品信息发送给商家服务器
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  获取openId: 从腾讯服务器获取当前用户的唯一标识
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  统一下单支付: 获取预支付的订单，总价，将预支付订单信息返给客户端
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  用户确认支付：wx.requestPayment发送请求给腾讯服务器请求扣款
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  等待支付结果：客户端等待(展现给用户看的)，商家服务器等待(更新订单状态)
+</code></pre></div></li></ol> <h1 id="_12-项目开发遇到问题及解决方案"><a href="#_12-项目开发遇到问题及解决方案" class="header-anchor">#</a> 12.       项目开发遇到问题及解决方案</h1> <h2 id="_12-1-fastclick的300ms延迟解决方案"><a href="#_12-1-fastclick的300ms延迟解决方案" class="header-anchor">#</a> 12.1. fastClick的300ms延迟解决方案</h2> <h3 id="_12-1-1-问题剖析"><a href="#_12-1-1-问题剖析" class="header-anchor">#</a> 12.1.1. 问题剖析:</h3> <ol><li><div class="language- extra-class"><pre><code> 移动端浏览器在派发点击事件的时候，通常会出现300ms左右的延迟
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code> 原因: 移动端的双击会缩放导致click判断延迟
+</code></pre></div></li></ol> <h3 id="_12-1-2-解决方案-fastclick库"><a href="#_12-1-2-解决方案-fastclick库" class="header-anchor">#</a> 12.1.2. 解决方案: fastclick库</h3> <p>实现原理: 在检测到touchend事件的时候，会通过DOM自定义事件立即出发模拟一个click事件，并把浏览器在300ms之后真正的click事件阻止掉</p> <h2 id="_12-2-外链样式页面刷新页面样式丢失问题"><a href="#_12-2-外链样式页面刷新页面样式丢失问题" class="header-anchor">#</a> 12.2. 外链样式页面刷新页面样式丢失问题</h2> <h3 id="_12-2-1-问题剖析"><a href="#_12-2-1-问题剖析" class="header-anchor">#</a> 12.2.1. 问题剖析:</h3> <p>项目通常需要一份重置样式文件reset.css, 而该文件通常放在static中通过link引入，
+<link rel="stylesheet" href="./static/css/reset.css">，但在子路由组件中刷新页面会发现重       置样式文件失效，原因是加载路径错误</p> <h3 id="_12-2-2-解决方案"><a href="#_12-2-2-解决方案" class="header-anchor">#</a> 12.2.2. 解决方案:</h3> <p>去掉点, 将相对路径改成绝对路径</p> <h2 id="_12-3-scoped下修改第三方样式数据-深度选择器"><a href="#_12-3-scoped下修改第三方样式数据-深度选择器" class="header-anchor">#</a> 12.3. scoped下修改第三方样式数据(深度选择器)</h2> <h3 id="_12-3-1-问题剖析"><a href="#_12-3-1-问题剖析" class="header-anchor">#</a> 12.3.1. 问题剖析:</h3> <p>在Vue组件化开发中为了避免组件之间样式冲突问题，可在style标签中加上scoped属性，等同于设置样式作用域，只在当前的组件生效，其原理就是给当前的选择器后添加一个随机生成的唯一的属性字段（swiper-container[<strong>data-v-7c66a6a2</strong>]），但如果需要在有scoped的组件中修改外部组件的样式(想修改swiper库的样式),因为scoped的限制问题就无法修改</p> <h3 id="_12-3-2-解决方案"><a href="#_12-3-2-解决方案" class="header-anchor">#</a> 12.3.2. 解决方案:</h3> <ol><li><div class="language- extra-class"><pre><code>  使用深度选择器: 原生css样式使用  &gt;&gt;&gt;,  在stylus，sass，less中使用/deep/
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  语法示例: 外层选择器/deep/ 修改样式的选择器
+</code></pre></div></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;style lang=&quot;stylus&quot; rel=&quot;stylesheet/stylus&quot; scoped&gt;
+
+   #homeContainer
+
+     .swiper-container
+
+       width 500px
+
+       height 300px
+
+       border 1px solid
+
+       .swiper-wrapper
+
+         width 100%
+
+         height 100%
+
+         .swiper-slide
+
+           width 100%
+
+           height 100%
+
+       /deep/ .swiper-pagination-bullet-active
+
+         width 20px
+
+         height 20px
+
+         background red
+
+   &lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <h2 id="_12-4-params传参刷新参数丢失问题"><a href="#_12-4-params传参刷新参数丢失问题" class="header-anchor">#</a> 12.4. params传参刷新参数丢失问题</h2> <h3 id="_12-4-1-问题剖析"><a href="#_12-4-1-问题剖析" class="header-anchor">#</a> 12.4.1. 问题剖析:</h3> <ol><li><div class="language- extra-class"><pre><code>  vue-router进行路由跳转的时候可通过params传参
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  如果在注册路由的时候没有使用占位符进行注册: ‘/home/:id’,首次路由跳转可以获取params参数，再次刷新页面params数据丢失
+</code></pre></div></li></ol> <h3 id="_12-4-2-解决方案"><a href="#_12-4-2-解决方案" class="header-anchor">#</a> 12.4.2. 解决方案:</h3> <p><strong>注册路由的时候写好占位符</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default [
+
+   {
+
+     path: '/home/:id',
+
+     component: Home,
+
+     name: 'home',
+
+     meta: {
+
+       isShow: true
+
+     }
+
+   }
+
+ ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;router-link :to=&quot;{name: 'home', params: {id: 1}}&quot;&gt;home&lt;/router-link&gt;&lt;router-link :to=&quot;/home/1&quot;&gt;home&lt;/router-link&gt; 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_12-5-map文件过大问题"><a href="#_12-5-map文件过大问题" class="header-anchor">#</a> 12.5. map文件过大问题</h2> <h3 id="_12-5-1-问题剖析"><a href="#_12-5-1-问题剖析" class="header-anchor">#</a> 12.5.1. 问题剖析:</h3> <ol><li><div class="language- extra-class"><pre><code>  打包生成的dist文件中的文件是压缩文件，如果发生错误不能很好的提示是哪里出了问题
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  .map文件就是为了提示用户哪里出了问题
+</code></pre></div></li></ol> <h3 id="_12-5-2-解决方案"><a href="#_12-5-2-解决方案" class="header-anchor">#</a> 12.5.2. 解决方案</h3> <ol><li><div class="language- extra-class"><pre><code>  实际项目上线文件是不需要.map文件的，如果没有去掉无形导致项目体积增大
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  vue-cli2: 设置修改config/index  ==&gt;  productionSourceMap: false
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  vue-cli3设置修改: vue.config.js  ==&gt; productionSourceMap: false
+</code></pre></div></li></ol> <h2 id="_12-6-生产环境-开发环境解决跨域问题"><a href="#_12-6-生产环境-开发环境解决跨域问题" class="header-anchor">#</a> 12.6. 生产环境 &amp; 开发环境解决跨域问题</h2> <h3 id="_12-6-1-问题剖析"><a href="#_12-6-1-问题剖析" class="header-anchor">#</a> 12.6.1. 问题剖析:</h3> <ol><li><div class="language- extra-class"><pre><code>  跨域: 浏览器为了安全起见推出了同源策略（协议，域名，端口号三者完全一样就是同源，否则就是跨域）
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  因为现在开发的项目都是前后端完全分离(前端有自己的服务器，如：vue脚手架服务器，同时还有服务器端服务器)的项目，必然存在跨域问题
+</code></pre></div></li></ol> <h3 id="_12-6-2-解决方案之开发环境跨域"><a href="#_12-6-2-解决方案之开发环境跨域" class="header-anchor">#</a> 12.6.2. 解决方案之开发环境跨域:</h3> <ol><li><div class="language- extra-class"><pre><code>  配置正向代理
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  思路: 页面请求本地服务器，本地服务器通过配置手动转换请求的服务器地址，请求服务器： /api/home -- http://m.you.163.com/home
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  vue-cli2配置: config/index.js文件中配置
+</code></pre></div></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>proxyTable: {
+
+   '/api': { // 匹配所有以 '/api'开头的请求路径
+
+     target: 'http://m.you.163.com', // 代理目标的基础路径
+
+     changeOrigin: true, // 支持跨域
+
+     pathRewrite: {// 重写路径: 去掉路径中开头的'/api'
+
+       '^/api': ''
+
+     }
+
+   }
+
+ },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><table><thead><tr><th></th></tr></thead> <tbody></tbody></table> <ol start="4"><li><div class="language- extra-class"><pre><code>  vue-cli3配置: vue.config.js文件中配置
+</code></pre></div></li></ol> <table><thead><tr><th>devServer: {    open: true,    proxy: {      // 处理以/api开头路径的请求      '/api': {        target: 'http://localhost:4000', // 转发的目标地址        pathRewrite: {          '^/api' : ''  // 转发请求时去除路径前面的/api        },        changeOrigin: true, // 如果协议/主机也不相同, 必须加上      },    }},</th></tr></thead> <tbody></tbody></table> <h3 id="_12-6-3-解决方案之生产环境跨域"><a href="#_12-6-3-解决方案之生产环境跨域" class="header-anchor">#</a> 12.6.3. 解决方案之生产环境跨域:</h3> <ol><li><div class="language- extra-class"><pre><code>  后台使用CORS解决跨域，存在风险，容易被人恶意攻击
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  使用nginx反向代理
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  思路: 页面请求发送给nginx服务器，nginx根据配置动态匹配要请求的服务器地址，最终的请求由nginx服务器发出解决跨域
+</code></pre></div></li></ol> <p>| # 指向前台应用打包后文件位置
+location / {
+root D:\work\190418\video\day07\online\admin_browser; # 前台应用的根路径
+index index.html; # 默认index页面</p> <h1 id="try-files-uri-uri-index-html-总是返回首页"><a href="#try-files-uri-uri-index-html-总是返回首页" class="header-anchor">#</a> try_files $uri $uri/ /index.html; # 总是返回首页</h1> <p>}</p> <h1 id="配置react项目的后台接口"><a href="#配置react项目的后台接口" class="header-anchor">#</a> 配置react项目的后台接口</h1> <p>location /api/ {
+proxy_pass http://127.0.0.1:5000/;</p> <table><thead><tr><th>}</th></tr></thead> <tbody></tbody></table> <h2 id="_12-7-使用swiper-better-scroll生成多个实例只有一个生效"><a href="#_12-7-使用swiper-better-scroll生成多个实例只有一个生效" class="header-anchor">#</a> 12.7. 使用swiper &amp; better-scroll生成多个实例只有一个生效</h2> <h3 id="_12-7-1-问题剖析"><a href="#_12-7-1-问题剖析" class="header-anchor">#</a> 12.7.1. 问题剖析:</h3> <ol><li><div class="language- extra-class"><pre><code>  使用swiper或者better-scroll的时候需要实例化，一下以swiper为例说明，在new Swiper的时候通常传递一个class类名，其目的是为了让swiper找到页面中对应的DOM对象从而在该DOM对象上产生作用
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  当一个页面中同时new多个swiper或者better-scroll的时候，使用的class类名一样的话则最先new的那个swiper生效，其他的无效
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  场景: 当封住一个swiper或者better-scroll组件的时候在一个页面复用，最先使用的那个swiper组件能够使用，其他的失效
+</code></pre></div></li></ol> <h3 id="_12-7-2-解决方案"><a href="#_12-7-2-解决方案" class="header-anchor">#</a> 12.7.2. 解决方案:</h3> <p><strong>将class换成ref</strong></p> <h2 id="_12-8-swiper或者better-scroll在页面加载后不生效"><a href="#_12-8-swiper或者better-scroll在页面加载后不生效" class="header-anchor">#</a> 12.8. swiper或者better-scroll在页面加载后不生效</h2> <h3 id="_12-8-1-问题剖析"><a href="#_12-8-1-问题剖析" class="header-anchor">#</a> 12.8.1. 问题剖析</h3> <p>new的时机太早，在实例化对象的时候页面的数据还没有到达或者没有渲染完成</p> <h3 id="_12-8-2-解决方案"><a href="#_12-8-2-解决方案" class="header-anchor">#</a> 12.8.2. 解决方案</h3> <ol><li><div class="language- extra-class"><pre><code>  目标: 想办法在列表数据更新显示之后才去创建swiper
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  方式一: 使用watch+$nextTick()
+</code></pre></div></li> <li><div class="language- extra-class"><pre><code>  方式二: 使用回调+$nextTick()
+</code></pre></div></li></ol> <h2 id="_12-9-vue实例的响应式属性-vs-非响应式属性"><a href="#_12-9-vue实例的响应式属性-vs-非响应式属性" class="header-anchor">#</a> 12.9. Vue实例的响应式属性 VS 非响应式属性</h2> <h3 id="_12-9-1-问题剖析"><a href="#_12-9-1-问题剖析" class="header-anchor">#</a> 12.9.1. 问题剖析</h3> <ol><li><div class="language- extra-class"><pre><code>  响应式式属性
+</code></pre></div></li></ol> <p>(1)     Vue实例初始化之前定义在data中的属性
+(2)     修改响应式属性之后，会触发视图更新<br>
+2.       非响应式属性
+(1)     直接通过this.xxx = value添加的属性是非响应式属性</p> <p>| data(){```
+this.age = 3 // age不是响应式的</p> <p>return {</p> <p>obj: { // obj是响应式属性</p> <p>name: 'kobe' //  name也是响应式属性</p> <p>}</p> <p>}</p> <p>},</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> |
+| --- |
+
+
+### 12.9.2. 解决方案
+1.       使用Vue.set() 或this.$set(target, propertyName, value)
+2.       示例:  this.obj.age = 30 -- this.$set(this.obj, 'age', 30)
+## 12.10. 需求：路由组件再次被切换回来的时候如何停留在之前页面滚动的位置
+### 12.10.1. 问题剖析
+想要保留路由组件之前页面滚动的位置就要保留之前的状态
+### 12.10.2. 解决方案
+1.       使用keep-alive缓存路由组件
+2.       说明： keep-alive会缓存动态组件，而不是销毁，也就是意味着下次加载缓存组件的时候不会去new新的实例组件，同时状态也会用缓存之前的状态，即使再次加载组件的时候里边的状态有更新
+### 12.10.3. 追问：如果在keep-alive缓存的动态路由组件中有一个组件需要加载的时候即使更新状态怎么办，因为keep-alive的特性是缓存组件之前的状态
+解决方案：使用keep-alive的include或者exclude属性，将需要及时刷新的路由组件排除
+
+# 13.       项目性能优化
+## 13.1. UI库按需加载(打包)问题
+### 13.1.1. 问题剖析: 
+当开发的项目需要引入第三方的UI组件库(antd/mint-ui/element-ui)的时, 需要会打包所有组件的js和css, 而项目中只使用了其中少部分组件. 使用按需打包实现只打包使用的组件, 从而减小打包文件大小
+### 13.1.2. 解决方案:
+下载bebel插件包:  [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
+添加配置: babel.config.js
+plugins: [
+[&quot;component&quot;, { // 使用babel-plugin-component插件包
+&quot;libraryName&quot;: &quot;mint-ui&quot;, // 针对特定的库
+&quot;style&quot;: true// 相关样式自动引入
+}]
+]
+
+## 13.2. 路由组件懒加载
+### 13.2.1. 问题剖析: 
+1.       Vue开发中使用路由跳转页面时，通常会注册多个路由，对应的有多个路由组件
+2.       在Vue打包后文件非常之大，如果没有路由懒加载的话，一上来加载所有页面的文件
+3.       如果同时加载所有页面的文件内容的话会导致首屏加载显示过慢，甚至白屏，导致用户体验差
+### 13.2.2. 解决方案
+| const Home = () =&gt; import('../pages/Home/Home.vue');
+const Search = () =&gt; import('../pages/Search/Search.vue');
+const CategoryList = () =&gt; import('../pages/CategoryList/CategoryList.vue');
+const Recommend = () =&gt; import('../pages/Recommend/Recommend.vue');
+const ShopCart = () =&gt; import('../pages/ShopCart/ShopCart.vue');
+const Profile = () =&gt; import('../pages/Profile/Profile.vue'); |
+| --- |
+
+
+## 13.3. React性能优化值 shouldComponentUpdate
+### 13.3.1. 问题剖析
+1.       shouldComponentUpdate在组件的props，state发生变化的时候即将调用componentWillUpdate之前调用
+2.       该生命周期函数必须返回一个布尔值，true代表继续更新，false停止本次更新，即不会创建新的虚拟DOM数去进行DOM虚拟算法比较, 而默认值是true
+### 13.3.2. 解决方案
+1.       方式一: 在shouldComponentUpdate中可以获取最新的nextProps，nextState，根据实际情况判断是否需要重新更新，如果不需要则return false;
+2.       方式二: 不实现Component, 而去实现PureComponent
+## 13.4. 图片懒加载
+### 13.4.1. 问题剖析
+当一个项目图片过多的时候如果一次性加载渲染代价较大，导致用户看到的效果时间延迟
+### 13.4.2. 解决方案
+1.       npm install vue-lazyload
+2.       声明使用: Vue.use(VueLazyLoad, {loading: loading图片})
+3.       组件使用: &lt;img v-lazy=&quot;item.primaryPicUrl&quot;  alt=&quot;新品&quot;&gt;
+## 13.5. webpack打包优化
+### 13.5.1. 优化打包文件
+1)      **目标: **
+兼容性 / 减小打包文件/ 懒加载 / 预加载 / 首屏加载优化
+**2)      技巧:**
+### 13.5.2. 优化打包
+1)      **目标: **
+加快打包  /  提升开发调试体验
+**2)      技巧:**
+## 13.6. HTML性能优化
+Ø  HTML标签有始终。减少浏览器的判断时间
+Ø  把script标签移到HTML文件末尾，因为JS会阻塞后面的页面的显示。
+Ø  减少iframe的使用，因为iframe会增加一条http请求，阻止页面加载，即使内容为空，加载也需要时间
+Ø  id和class，在能看明白的基础上，简化命名，在含有关键字的连接词中连接符号用'-'，不要用'_'
+Ø  保持统一大小写，统一大小写有利于浏览器缓存，虽然浏览器不区分大小写，但是w3c标准为小写
+Ø  清除空格，虽然空格有助于我们查看代码，但是每个空格相当于一个字符，空格越多，页面体积越大，像google、baidu等搜索引擎的首页去掉了所有可以去掉的空格、回车等字符，这样可以加快web页面的传输。可以借助于DW软件进行批量删除 html内标签之间空格，sublime text中ctrl+a，然后长按shift+tab全部左对齐，清除行开头的空格
+Ø  减少不必要的嵌套，尽量扁平化，因为当浏览器编译器遇到一个标签时就开始寻找它的结束标签，直到它匹配上才能显示它的内容，所以当嵌套很多时打开页面就会特别慢。
+Ø  减少注释，因为过多注释不光占用空间，如果里面有大量关键词会影响搜索引擎的搜索
+Ø  使用css+div代替table布局，去掉格式化控制标签如：strong，b，i等，使用css控制
+Ø  代码要结构化、语义化
+Ø  css和javascript尽量全部分离到单独的文件中
+## 13.7. css性能优化
+Ø  多利用继承，多个子元素公用的样式，如果该样式能继承的话就写在父元素身上
+Ø  尽量减少重绘重排的次数
+Ø  选择器命名规范，通过id寻找更快
+Ø  动画区域开启独立的图层
+n  定位： position: absolute/relative
+n  Will-change: xxx;
+Ø  合并、压缩你的css文件，减少http请求，可以借助工具或者自动化构建。
+Ø  使用CSS sprite来处理你的图片
+
+## 13.8. JS性能优化
+1.     合并压缩js
+2.     减少对DOM的操作，避免重绘重排
+3.     减少请求的个数，节省网络资源
+4.     封装功能函数实现复用
+5.     循环语句中避免定义变量
+6.     慎用闭包
+7.     函数节流，函数防抖
+## 13.9. 封装组件
+### 13.9.1. 问题剖析
+1.     一个大型项目中内容足够复杂，在很多页面中部分内容是重复的
+2.     如果不做任何处理导致代码冗余，不利于提高性能
+### 13.9.2. 解决方案
+1.     抽取封装组件
+2.     封装组件思想: 
+a)       组件内部保留相同的内容
+b)      不同的内容抽取出来由使用者传递进组件内部，提供组件的复用性
+c)       组件内部可提前声明规定用户传递的参数的必要性和数据类型
+d)      通过标签属性的形式传递，在组件内部通过props接收
+# 14.       经典问题解析
+## 14.1. MVC和MVVM的区别
+### 14.1.1. MVC
+**Model（模型）**是应用程序中用于处理应用程序数据逻辑的部分。
+ 通常模型对象负责在数据库中存取数据。
+**View（视图）**是应用程序中处理数据显示的部分。
+ 通常视图是依据模型数据创建的。
+**Controller（控制器）**是应用程序中处理用户交互的部分。
+ 通常控制器负责从视图读取数据，控制用户输入，并向模型发送数据。
+最典型的MVC就是JSP + [servlet](https://baike.baidu.com/item/servlet) + [javabean](https://baike.baidu.com/item/javabean)的模式
+### 14.1.2. MVVM
+1.       M：Model模型, 也就是包含数据的js对象(只包含属性, 不包含方法)
+2.       V：View视图，动态显示模型对象中的数据显示界面
+3.       VM：ViewModel视图模型, 本质是一个绑定器, 通过vm读取model中的数据显示到view上, 同时view输入数据改变, vm也可以将输入数据保存到model中
+4.       图解
+5.       MVVM的优势: 不用亲自操作DOM, 数据是响应式的, 一旦数据变化
+## 14.2. 两个独立html页面怎么通信
+### 14.2.1. 问题描述:
+如：淘宝A，B页面，A为商品页，B为购物车页，两个页面同时打开,在A页面点击商品添加至购物车，切换到B页面购物车怎么显示该商品信息
+### 14.2.2. 解决方案
+1.       利用localStroage，A页面将数据存入localStroage，B页面读取localStorage中的数据
+2.       关键点: B页面如何知道A页面什么时候存数据到localStorage
+3.       localStorage中有个‘storage’事件
+4.       window.addEventListener(‘storage’, callback)，A页面存数据，B页面监听事件
+5.       代码示例
+A页面
+
+| &lt;**button id=&quot;add&quot;**&gt;添加一件商品到购物车&lt;/**button**&gt;
+  &lt;**button id=&quot;del&quot;**&gt;删除一件商品从购物车&lt;/**button**&gt;
+&lt;**script type=&quot;text/javascript&quot;**&gt;
+    **window**.**onload **= **function **() {
+      document.getElementById(**'add'**).**onclick **= **function **() {
+        _count_(**true**)
+      }
+
+      document.getElementById(**'del'**).**onclick **= **function **() {
+        _count_(**false**)
+      }
+
+      **function **_count_(flag) {
+        **let **count = **localStorage**.getItem(**'count'**)?**_JSON_**.parse(**localStorage**.getItem(**'count'**)).**count**:0;
+        **if**(flag){
+          count += 1;
+        }**else **{
+          **if**(!count) **return**;
+          count -= 1;
+        }
+        **let **countObj = {
+          count
+        }
+        **localStorage**.setItem(**'count'**, **_JSON_**.stringify(countObj))
+      }
+    } |
+| --- |
+
+
+B页面
+
+| &lt;**div class=&quot;cart&quot;**&gt;
+  购物车产品数量:
+  &lt;**span class=&quot;count&quot;**&gt;0&lt;/**span**&gt;
+&lt;/**div**&gt;
+&lt;**script type=&quot;text/javascript&quot;**&gt;
+      document.querySelector(**'.count'**).**textContent **= **localStorage**.getItem(**'count'**)?**_JSON_**.parse(**localStorage**.getItem(**'count'**)).**count**:0;
+      **window**.addEventListener(**'storage'**, **function **(event) {
+        **console**.log(**_JSON_**.parse(event.**newValue**).**count**);
+        document.querySelector(**'.count'**).**textContent **= **_JSON_**.parse(event.**newValue**).**count
+      **})
+&lt;/**script**&gt; |
+| --- |
+
+## 14.3. 在React或Vue中在子组件能不能修改props数据
+### 14.3.1. 问题描述
+1. 父组件通过标签属性的形式向子组件传递数据
+2. 传递的数据类型：基本数据类型，引用数据类型
+### 14.3.2. 答案
+1. React不能修改，修改会报错
+2. Vue中可以修改，会有警告
+### 14.3.3. 追问：Vue子组件修改props的数据会不会影响父组件的状态值
+1. 如果传递的基本数据类型，不会影响
+2. 如果传递的引用数据类型，会影响
+## 14.4. 浏览器的同源策略
+### 14.4.1. 同源
+协议、域名、端口都相同
+### 14.4.2. 同源策略
+是浏览器最核心也最基本的安全功能，主要体现在同源策略会限制来自不同源的文档和脚本对当前源的文档数据的读取或设置某些属性，是用于隔离潜在恶意文件的重要安全机制
+### 14.4.3. 同源策略控制了不同源的交互
+1.       跨域写：默认允许，比如&lt;a&gt;、重定向和表单提交
+2.       跨域资源嵌入：默认允许, 比如: &lt;script&gt; / &lt;link&gt; / &lt;img&gt; / &lt;video&gt; / &lt;audio&gt; / &lt;iframe&gt;
+3.       跨域读: 默认不允许, 比如ajax请求, 读取跨域的Cookie, localStorage, sessionStorage
+
+## 14.5. XSRF/CSRF攻击
+### 14.5.1. [什么是XSRF](https://www.jianshu.com/p/0e52c58cf93f)
+CSRF（Cross Site Request Forgery, 跨站域请求伪造）也称 XSRF, 是一种网络攻击方式
+### 14.5.2. 攻击的原理
+1. 就是利用由于浏览器的同源策略对嵌入资源不做限制的行为进行跨站请求伪造的
+2. 原理分析图
+1. 用户浏览位于目标服务器 A 的网站。并通过登录验证。
+2. 获取到 cookie_session_id，保存到浏览器 cookie 中。
+3. 在未登出服务器 A ，并在 session_id 失效前用户浏览位于 hacked server B 上的网站。
+4. server B 网站中的`&lt;img src = &quot;http://www.altoromutual.com/bank/transfer.aspx?creditAccount=1001160141&amp;transferAmount=1000&quot;&gt;`嵌入资源起了作用，迫使用户访问目标服务器 A
+5. 由于用户未登出服务器 A 并且 sessionId 未失效，请求通过验证，非法请求被执行。
+### 14.5.3. 解决方案
+使用post请求
+用户身份校验: 
+toke
+userId
+## 14.6. XSS攻击
+### 14.6.1. [什么是XSS攻击](https://blog.tonyseek.com/post/introduce-to-xss-and-csrf/)
+跨站脚本攻击(Cross Site Scripting), 因简称是CSS同样式表css重合，所以改名叫XSS
+### 14.6.2. 攻击原理
+是注入攻击的一种。其特点是不对服务器端造成任何伤害，而是通过一些正常的站内交互途径，将包含js脚本的内容提交后台, 后台没有进行验证过滤返回给浏览器端显示。
+例如发布评论，提交含有 JavaScript 的内容文本, 这时服务器端如果没有过滤或转义掉这些脚本，作为内容发布到了页面上，其他用户访问这个页面的时候就会运行这些脚本
+场景：用户评论：
+**正常情况：**
+用户A提交评论内容为字符串‘我要好好学习，天天向上’，服务器获取参数
+在返回的评论数据中添加该字符串，前后获取遍历显示在页面，结果: &lt;p&gt;我要好好学习，天天向上&lt;/p&gt;
+**xss攻击:**
+提交评价内容为: ‘&lt;script&gt;读取浏览器存储信息并发送给非法服务器后台&lt;/script&gt;’,服务器获取参数保存后返回到浏览器端显示，前后获取遍历显示在页面，结果: 自动执行这段JS, 会自动将用户信息提交给非法后台服务器
+### 14.6.3. 解决方案
+1. 如果提交的内容不能是html, 后台需要进行检查报错或去除标签结构, 只留下纯文本
+2. 如果提交的内容可以包含html, 后台需要读取出其文本内容再组织成html结构
+## 14.7. Vue单页面应用中刷新页面，Vuex数据丢失
+### 14.7.1. Vuex特点
+1.       Vuex数据保存在运行内存中，vue实例初始化的时候为其分配内存
+2.       当刷新页面的时候重新初始化Vue实例，所以重新为Vuex分配内存导致之前保存的数据丢失
+### 14.7.2. 如何解决
+1.       Vuex的数据都是每次组件加载时候动态请求获取数据保存
+a)       优点：保证数据不会丢失
+b)      缺点: 性能差，因为网络问题可能有网络延迟
+2.       将Vuex中的数据每次同步更新保存到sessionStorage中
+a)       优点: 每次页面刷新后从sessionStorage中获取保存的数据，不会丢失
+b)      缺点: state中的数据是动态的，就需要一直要同步到sessionStorage中，性能差
+3.       在页面刷新之前获取Vuex的数据，将数据保存在sessionStorage中，页面加载后从sessionStorage中获取
+a)       优点: 减少动态更新sessionStorage的次数，性能好
+b)      重点: 给window绑定beforeupload事件监听
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br></div></div></div></div> <!----> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/7/8 08:09:37</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/pages/c985cf/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">基础题目讲解</div></a></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/c985cf/">基础题目讲解</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/c985cf/"><div>
+            基础题目讲解
+            <!----></div></a> <span class="date">07-08</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/53da06/"><div>
+            Docker部署私有相册PhotoPrism
+            <!----></div></a> <span class="date">07-07</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/022326/"><div>
+            四月的天
+            <!----></div></a> <span class="date">07-04</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2019-2023
+    <span>Dong Lingju</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f3fe2e17.js" defer></script><script src="/assets/js/2.ca715f40.js" defer></script><script src="/assets/js/12.ab465c55.js" defer></script>
+  </body>
+</html>
